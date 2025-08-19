@@ -1,0 +1,12 @@
+C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\interativopdv.exe.config
+C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\interativopdv.exe
+C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\interativopdv.pdb
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.csproj.AssemblyReference.cache
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Form1.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Properties.Resources.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.csproj.GenerateResource.cache
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.csproj.CoreCompileInputs.cache
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.exe
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.pdb
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Principal.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Login.resources
