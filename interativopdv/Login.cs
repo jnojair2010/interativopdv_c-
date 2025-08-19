@@ -52,11 +52,11 @@ namespace interativopdv
 
             if (islogado.IsLogado != true)
             {
-                MessageBox.Show(" o usuario não está logado!");
+               // MessageBox.Show(" o usuario não está logado!");
             }
             else
             {
-                MessageBox.Show(" o usuario  está logado!");
+               // MessageBox.Show(" o usuario  está logado!");
             }
 
         }
