@@ -7,7 +7,15 @@
       "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\server\\serverlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\dao\\conexaodb1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\colaboradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\model\\colaboradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\dao\\conexaodb1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\dao\\conexaodb1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\colaboradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\model\\colaboradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
+              "RelativeDocumentMoniker": "interativopdv\\model\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
+              "RelativeToolTip": "interativopdv\\model\\LoginModel.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwEAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T18:36:11.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ConexaoDb1.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\dao\\ConexaoDb1.cs",
               "RelativeDocumentMoniker": "interativopdv\\dao\\ConexaoDb1.cs",
@@ -69,26 +86,27 @@
               "RelativeDocumentMoniker": "interativopdv\\server\\ServerLogin.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\server\\ServerLogin.cs",
               "RelativeToolTip": "interativopdv\\server\\ServerLogin.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvyMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T12:48:14.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ColaboradorModel.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\ColaboradorModel.cs",
               "RelativeDocumentMoniker": "interativopdv\\model\\ColaboradorModel.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\ColaboradorModel.cs",
               "RelativeToolTip": "interativopdv\\model\\ColaboradorModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T22:59:22.175Z"
+              "WhenOpened": "2025-08-18T22:59:22.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\Login.cs",
               "RelativeDocumentMoniker": "interativopdv\\Login.cs",
@@ -96,24 +114,22 @@
               "RelativeToolTip": "interativopdv\\Login.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAwwDoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T17:34:43.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-14T17:34:43.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\Login.cs",
               "RelativeDocumentMoniker": "interativopdv\\Login.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\Login.cs [Design]",
               "RelativeToolTip": "interativopdv\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T09:54:42.272Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-08-05T09:54:42.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Login.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\Login.Designer.cs",
               "RelativeDocumentMoniker": "interativopdv\\Login.Designer.cs",
@@ -121,12 +137,11 @@
               "RelativeToolTip": "interativopdv\\Login.Designer.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAowEMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T10:13:29.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T10:13:29.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Principal.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\Principal.cs",
               "RelativeDocumentMoniker": "interativopdv\\Principal.cs",
@@ -138,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Principal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\Principal.cs",
               "RelativeDocumentMoniker": "interativopdv\\Principal.cs",
@@ -149,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\Program.cs",
               "RelativeDocumentMoniker": "interativopdv\\Program.cs",

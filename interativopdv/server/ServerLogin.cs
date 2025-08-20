@@ -22,29 +22,18 @@ namespace interativopdv.server
 
         public LoginModel ServerLogar(LoginModel login)
         {
-            colaboradorLogado.Login = login;
-            ConexaoDb1 conexaoDb1 = new ConexaoDb1();
-            bool conn = conexaoDb1.OpenConexao();
+           // colaboradorLogado.mLogin = login;
+            LoginModel ml = new LoginModel();
+            colaboradorLogado.setLogin=ml.getLoginDao(login);
 
-            if(conn == true)
-            {
-                var command = new MySqlCommand("select * from login;", conexaoDb1.GetConnection());
-                var reader = command.ExecuteReader();
+            MessageBox.Show($" o di do login é: {ml.IdLogin}");
 
-                while (reader.Read())
-                {
-                    MessageBox.Show($"id => {reader["idLogin"]} => login {reader["login"]} => senha {reader["password"]}");
-                }
-              
-            }
-           
-
-            return colaboradorLogado.Login;
+            return colaboradorLogado.mLogin;
         }
 
         public LoginModel IsToLogado()
         {
-            return colaboradorLogado.Login;
+            return colaboradorLogado.mLogin;
         }
     }
 }
