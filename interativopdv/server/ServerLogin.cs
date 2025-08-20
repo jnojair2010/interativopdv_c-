@@ -26,17 +26,27 @@ namespace interativopdv.server
             ConexaoDb1 conexaoDb1 = new ConexaoDb1();
             bool conn = conexaoDb1.OpenConexao();
 
-            if(conn == true)
+            try
             {
-                var command = new MySqlCommand("select * from login;", conexaoDb1.GetConnection());
-                var reader = command.ExecuteReader();
-
-                while (reader.Read())
+                if (conn == true)
                 {
-                    MessageBox.Show($"id => {reader["idLogin"]} => login {reader["login"]} => senha {reader["password"]}");
+                    var command = new MySqlCommand("select * from login;", conexaoDb1.GetConnection());
+                    var reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        MessageBox.Show($"id => {reader["idLogin"]} => login {reader["login"]} => senha {reader["password"]}");
+                    }
+
                 }
-              
             }
+            catch( Exception e)
+            {
+                MessageBox.Show(" erro  "+ e.Message);
+
+            }
+
+            
            
 
             return colaboradorLogado.Login;
