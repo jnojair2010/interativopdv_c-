@@ -25,6 +25,7 @@ namespace interativopdv
         public void Login()
         {
             Login newLogin = new Login();
+            newLogin.MdiParent = this;
             newLogin.Show();
         
         }
@@ -53,6 +54,7 @@ namespace interativopdv
         private void productoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             CadastrarProducto cp = new CadastrarProducto();
+            cp.MdiParent = this;
             cp.Show();
         }
     }

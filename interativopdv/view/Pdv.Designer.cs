@@ -66,7 +66,7 @@
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1700, 71);
+            this.panel1.Size = new System.Drawing.Size(1376, 71);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -84,7 +84,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1628, 13);
+            this.button1.Location = new System.Drawing.Point(1272, 12);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 41);
@@ -251,12 +251,12 @@
             this.lb_total.Size = new System.Drawing.Size(410, 40);
             this.lb_total.TabIndex = 18;
             // 
-            // Form1
+            // Pdv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1699, 965);
+            this.ClientSize = new System.Drawing.Size(1383, 793);
             this.ControlBox = false;
             this.Controls.Add(this.lb_total);
             this.Controls.Add(this.bl_subTotal);
@@ -277,7 +277,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("News701 BT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "Form1";
+            this.Name = "Pdv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

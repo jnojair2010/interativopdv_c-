@@ -48,7 +48,7 @@ namespace interativopdv
 
             if (LgServer.GetColaboradorModel.Login.IdLogin > 0)
             {
-               // MessageBox.Show(" dentro do form login o id é " + LgServer.GetColaboradorModel.Login.IdLogin);
+                // MessageBox.Show(" dentro do form login o id é " + LgServer.GetColaboradorModel.Login.IdLogin);
                 this.Close();
 
             }
