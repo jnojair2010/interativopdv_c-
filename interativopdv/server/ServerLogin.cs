@@ -20,41 +20,54 @@ namespace interativopdv.server
         private LoginRequest requesteLogin = new LoginRequest();
 
 
-        public LoginModel ServerLogar(LoginModel login)
+        public void ServerLogar(LoginModel login)
         {
             colaboradorLogado.Login = login;
             ConexaoDb1 conexaoDb1 = new ConexaoDb1();
             bool conn = conexaoDb1.OpenConexao();
 
+            LoginModel lm = new LoginModel();
+
             try
             {
                 if (conn == true)
                 {
-                    var command = new MySqlCommand("select * from login;", conexaoDb1.GetConnection());
+                    var command = new MySqlCommand("select * from login where login=@l and password=@p;", conexaoDb1.GetConnection());
+                    command.Parameters.AddWithValue("@l", login.Login);
+                    command.Parameters.AddWithValue("@p", login.Password);
                     var reader = command.ExecuteReader();
 
                     while (reader.Read())
                     {
-                        MessageBox.Show($"id => {reader["idLogin"]} => login {reader["login"]} => senha {reader["password"]}");
+                        lm.IdLogin = reader.GetInt32("idLogin");
+                        lm.Login = reader.GetString("login");
+                        lm.Password = reader.GetString("Password");
+
+                        colaboradorLogado.Login = lm;
+
                     }
 
                 }
             }
-            catch( Exception e)
+            catch (Exception e)
             {
-                MessageBox.Show(" erro  "+ e.Message);
+                MessageBox.Show(" erro  " + e.Message);
 
             }
 
-            
-           
-
-            return colaboradorLogado.Login;
         }
 
         public LoginModel IsToLogado()
         {
             return colaboradorLogado.Login;
+        }
+
+        public ColaboradorModel GetColaboradorModel
+        {
+            get
+            {
+                return colaboradorLogado;
+            }
         }
     }
 }

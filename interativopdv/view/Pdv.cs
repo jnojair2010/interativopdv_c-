@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace interativopdv
 {
-    public partial class Form1 : Form
+    public partial class Pdv : Form
     {
-        public Form1()
+        public Pdv()
         {
             InitializeComponent();
         }

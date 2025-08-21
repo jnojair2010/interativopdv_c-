@@ -8,11 +8,17 @@ namespace interativopdv.model
 {
     internal class LoginModel
     {
+        private int idLogin;
         private string login;
         private string password;
         private bool isLogado = false;
 
 
+        public int IdLogin
+        {
+            get { return idLogin; }
+            set { idLogin = value; }
+        }
         public string Login
         {
             get { return login; }

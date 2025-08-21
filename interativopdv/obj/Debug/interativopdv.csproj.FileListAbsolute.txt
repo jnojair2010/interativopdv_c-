@@ -2,7 +2,6 @@ C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\interativopdv.e
 C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\interativopdv.exe
 C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\interativopdv.pdb
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.csproj.AssemblyReference.cache
-C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Form1.resources
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Properties.Resources.resources
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.csproj.GenerateResource.cache
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.csproj.CoreCompileInputs.cache
@@ -89,3 +88,5 @@ C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\System.Numerics
 C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interati.93651C6E.Up2Date
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Pdv.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.CadastrarProducto.resources

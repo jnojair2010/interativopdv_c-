@@ -1,6 +1,6 @@
 ﻿namespace interativopdv
 {
-    partial class Form1
+    partial class Pdv
     {
         /// <summary>
         /// Variável de designer necessária.

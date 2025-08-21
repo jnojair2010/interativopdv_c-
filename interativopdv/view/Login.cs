@@ -42,7 +42,16 @@ namespace interativopdv
             modelLogin.Password = password;
             LgServer.ServerLogar(modelLogin);
 
-            isLogado();
+            if (LgServer.GetColaboradorModel.Login.IdLogin > 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(" Login Incrreto");
+            }
+
+                isLogado();
 
         }
 
