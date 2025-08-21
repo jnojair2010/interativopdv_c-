@@ -23,7 +23,6 @@ namespace interativopdv.server
         public void ServerLogar(LoginModel login)
         {
            // colaboradorLogado.mLogin = login;
-            LoginModel ml = new LoginModel();
 
             LoginModel lm = new LoginModel();
             ConexaoDb1 conexaoDb1 = new ConexaoDb1();
@@ -44,23 +43,23 @@ namespace interativopdv.server
                         lm.Login = reader.GetString("login");
                         lm.Password = reader.GetString("Password");
 
-                        colaboradorLogado. = lm;
+                        colaboradorLogado.Login = lm;
 
                     }
 
                 }
+
             }
             catch (Exception e)
             {
                 MessageBox.Show(" erro  " + e.Message);
 
             }
-
         }
 
         public LoginModel IsToLogado()
         {
-            return colaboradorLogado.mLogin;
+            return colaboradorLogado.Login;
         }
 
         public ColaboradorModel GetColaboradorModel

@@ -151,6 +151,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -165,6 +166,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao-de-interface-de-seta-de-login-delineado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao-fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao-fechar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao-fechar %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

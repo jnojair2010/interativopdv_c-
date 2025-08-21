@@ -18,6 +18,8 @@ namespace interativopdv
         {
             InitializeComponent();
         }
+
+        int countErroLogin = 0;
         private ServerLogin LgServer = new ServerLogin();
 
         private void label1_Click(object sender, EventArgs e)
@@ -32,6 +34,8 @@ namespace interativopdv
 
         private void logar(object sender, EventArgs e)
         {
+          
+
             string login = txtLogin.Text;
             string password = txtPassword.Text;
 
@@ -44,11 +48,19 @@ namespace interativopdv
 
             if (LgServer.GetColaboradorModel.Login.IdLogin > 0)
             {
+               // MessageBox.Show(" dentro do form login o id é " + LgServer.GetColaboradorModel.Login.IdLogin);
                 this.Close();
+
             }
             else
             {
-                MessageBox.Show(" Login Incrreto");
+                countErroLogin++;
+                MessageBox.Show(" Login Incrreto contador ");
+
+                if (countErroLogin == 3)
+                {
+                    Application.Exit();
+                }
             }
 
                 isLogado();
@@ -68,6 +80,16 @@ namespace interativopdv
                // MessageBox.Show(" o usuario  está logado!");
             }
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -30,12 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // CadastrarProduro
+            // CadastrarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1013, 719);
-            this.Name = "CadastrarProduro";
+            this.Name = "CadastrarProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Produro";
             this.ResumeLayout(false);
 
