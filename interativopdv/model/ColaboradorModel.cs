@@ -30,10 +30,11 @@ namespace interativopdv.model
             get { return stado; }
             set { stado = value; }
         }
-        public LoginModel Login
+        public void setLogin(LoginModel l)
         {
-            get { return login; }
-            set { login = value; }
+            login.Login = l.Login;
+            login.Password = l.Password;
+
         }
 
     }

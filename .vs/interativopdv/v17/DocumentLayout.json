@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\jair\\source\\repos\\interativopdv\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\colaboradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\model\\colaboradormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\serverlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\server\\serverlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\cadastrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,19 +50,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColaboradorModel.cs",
+              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\ColaboradorModel.cs",
+              "RelativeDocumentMoniker": "interativopdv\\model\\ColaboradorModel.cs",
+              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\ColaboradorModel.cs",
+              "RelativeToolTip": "interativopdv\\model\\ColaboradorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T00:46:01.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
+              "RelativeDocumentMoniker": "interativopdv\\model\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
+              "RelativeToolTip": "interativopdv\\model\\LoginModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T00:43:29.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServerLogin.cs",
+              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\ServerLogin.cs",
+              "RelativeDocumentMoniker": "interativopdv\\server\\ServerLogin.cs",
+              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\ServerLogin.cs",
+              "RelativeToolTip": "interativopdv\\server\\ServerLogin.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwC4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T00:42:48.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CadastrarProducto.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarProducto.cs",
               "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarProducto.cs",
               "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarProducto.cs [Design]",
               "RelativeToolTip": "interativopdv\\view\\CadastrarProducto.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T00:35:32.433Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-08-21T00:35:32.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Principal.cs",
               "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\Principal.cs",
               "RelativeDocumentMoniker": "interativopdv\\Principal.cs",
@@ -63,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\Login.cs",
               "RelativeDocumentMoniker": "interativopdv\\view\\Login.cs",
@@ -76,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\Login.cs",
               "RelativeDocumentMoniker": "interativopdv\\view\\Login.cs",
@@ -88,15 +138,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Principal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\Principal.cs",
               "RelativeDocumentMoniker": "interativopdv\\Principal.cs",
               "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\Principal.cs [Design]",
               "RelativeToolTip": "interativopdv\\Principal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T09:37:32.502Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-08-05T09:37:32.502Z"
             }
           ]
         }
