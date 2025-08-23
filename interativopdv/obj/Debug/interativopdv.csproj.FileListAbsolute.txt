@@ -92,3 +92,5 @@ C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.v
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.CadastrarProducto.resources
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Pdv.resources
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.Categorias.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.Categorias.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.SubCategorias.resources

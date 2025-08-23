@@ -46,6 +46,7 @@
             this.fTrocoFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sangriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +105,8 @@
             // 
             this.cadastrarToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productoToolStripMenuItem,
-            this.categoriaToolStripMenuItem});
+            this.categoriaToolStripMenuItem,
+            this.subCategoriaToolStripMenuItem});
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
             this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
@@ -188,6 +190,13 @@
             this.inserirToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
             this.inserirToolStripMenuItem.Text = "Inserir";
             // 
+            // subCategoriaToolStripMenuItem
+            // 
+            this.subCategoriaToolStripMenuItem.Name = "subCategoriaToolStripMenuItem";
+            this.subCategoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.subCategoriaToolStripMenuItem.Text = "Sub Categoria";
+            this.subCategoriaToolStripMenuItem.Click += new System.EventHandler(this.subCategoriaToolStripMenuItem_Click_1);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,5 +237,6 @@
         private System.Windows.Forms.ToolStripMenuItem fTrocoFinalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sangriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subCategoriaToolStripMenuItem;
     }
 }

@@ -137,6 +137,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="serverhttp\loginhttp\LoginRequest.cs" />
     <Compile Include="server\ServerLogin.cs" />
+    <Compile Include="view\SubCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\SubCategorias.Designer.cs">
+      <DependentUpon>SubCategorias.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="view\CadastrarProducto.resx">
       <DependentUpon>CadastrarProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +168,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="view\SubCategorias.resx">
+      <DependentUpon>SubCategorias.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
