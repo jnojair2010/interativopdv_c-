@@ -46,7 +46,6 @@ C:\Users\Usuário\source\repos\interativopdv\interativopdv\bin\Debug\System.Runt
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.csproj.AssemblyReference.cache
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.exe.config
-C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Form1.resources
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Login.resources
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Principal.resources
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Properties.Resources.resources
@@ -90,3 +89,5 @@ C:\Users\jair\source\repos\interativopdv\interativopdv\bin\Debug\System.Threadin
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interati.93651C6E.Up2Date
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Pdv.resources
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.CadastrarProducto.resources
+C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.CadastrarProducto.resources
+C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.Pdv.resources
