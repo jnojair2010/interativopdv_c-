@@ -57,6 +57,14 @@ namespace interativopdv
             cp.MdiParent = this;
             cp.Show();
         }
+
+        private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Categorias cat = new Categorias();
+            cat.MdiParent = this;
+            cat.Show();
+           
+        }
     }
 
     

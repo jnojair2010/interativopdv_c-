@@ -105,6 +105,12 @@
     <Compile Include="view\CadastrarProducto.Designer.cs">
       <DependentUpon>CadastrarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Pdv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     <Compile Include="server\ServerLogin.cs" />
     <EmbeddedResource Include="view\CadastrarProducto.resx">
       <DependentUpon>CadastrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\Pdv.resx">
       <DependentUpon>Pdv.cs</DependentUpon>
