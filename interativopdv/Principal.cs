@@ -72,6 +72,21 @@ namespace interativopdv
             sub.MdiParent = this;
             sub.Show();
         }
+
+        private void onClickAbriJanelaFundoTroco(object sender, EventArgs e)
+        {
+            FundoTroco fundo = new FundoTroco();
+            fundo.MdiParent = this;
+            fundo.Show();
+        }
+
+        private void InserirSrangria(object sender, EventArgs e)
+        {
+            Sangria sangria = new Sangria();
+            sangria.MdiParent = this;
+            sangria.Show();
+
+        }
     }
 
     

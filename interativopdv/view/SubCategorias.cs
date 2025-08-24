@@ -25,8 +25,9 @@ namespace interativopdv.view
             // permitir ou não permitir que o usuario edite as linhas
             listViewSBC.LabelEdit = true; //true para permitir edição em linhas
 
-            listViewSBC.Columns.Add("Nome Categoria", 400, HorizontalAlignment.Left);
-            listViewSBC.Columns.Add("id", 50, HorizontalAlignment.Left);
+            listViewSBC.Columns.Add("Nome Sub-Categoria", 250, HorizontalAlignment.Left);
+            listViewSBC.Columns.Add("id", 20, HorizontalAlignment.Left);
+            listViewSBC.Columns.Add("Categoria Vinculada", 300, HorizontalAlignment.Left);
         }
     }
 }

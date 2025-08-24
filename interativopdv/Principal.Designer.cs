@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novasVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,31 +36,18 @@
             this.cadastrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fTrocoIncialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fTrocoFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ftmenu = new System.Windows.Forms.ToolStripMenuItem();
             this.sangriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.subCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vendasToolStripMenuItem,
-            this.cadastrarToolStripMenuItem,
-            this.caixaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1484, 29);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // vendasToolStripMenuItem
             // 
@@ -114,16 +100,23 @@
             // productoToolStripMenuItem
             // 
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.productoToolStripMenuItem.Text = "Producto";
             this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click_1);
             // 
             // categoriaToolStripMenuItem
             // 
             this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.categoriaToolStripMenuItem.Text = "Categorias";
             this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
+            // 
+            // subCategoriaToolStripMenuItem
+            // 
+            this.subCategoriaToolStripMenuItem.Name = "subCategoriaToolStripMenuItem";
+            this.subCategoriaToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.subCategoriaToolStripMenuItem.Text = "Sub Categoria";
+            this.subCategoriaToolStripMenuItem.Click += new System.EventHandler(this.subCategoriaToolStripMenuItem_Click_1);
             // 
             // consultarToolStripMenuItem
             // 
@@ -158,44 +151,45 @@
             // cadastrarToolStripMenuItem2
             // 
             this.cadastrarToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fTrocoIncialToolStripMenuItem,
-            this.fTrocoFinalToolStripMenuItem});
+            this.ftmenu});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(147, 26);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
             // 
-            // fTrocoIncialToolStripMenuItem
+            // ftmenu
             // 
-            this.fTrocoIncialToolStripMenuItem.Name = "fTrocoIncialToolStripMenuItem";
-            this.fTrocoIncialToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
-            this.fTrocoIncialToolStripMenuItem.Text = "F. Troco Incial";
-            // 
-            // fTrocoFinalToolStripMenuItem
-            // 
-            this.fTrocoFinalToolStripMenuItem.Name = "fTrocoFinalToolStripMenuItem";
-            this.fTrocoFinalToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
-            this.fTrocoFinalToolStripMenuItem.Text = "F. Troco Final";
+            this.ftmenu.Name = "ftmenu";
+            this.ftmenu.Size = new System.Drawing.Size(180, 26);
+            this.ftmenu.Text = "Fundo Troco";
+            this.ftmenu.Click += new System.EventHandler(this.onClickAbriJanelaFundoTroco);
             // 
             // sangriaToolStripMenuItem
             // 
             this.sangriaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem});
             this.sangriaToolStripMenuItem.Name = "sangriaToolStripMenuItem";
-            this.sangriaToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.sangriaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.sangriaToolStripMenuItem.Text = "Sangria";
             // 
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.inserirToolStripMenuItem.Text = "Inserir";
+            this.inserirToolStripMenuItem.Click += new System.EventHandler(this.InserirSrangria);
             // 
-            // subCategoriaToolStripMenuItem
+            // menuStrip1
             // 
-            this.subCategoriaToolStripMenuItem.Name = "subCategoriaToolStripMenuItem";
-            this.subCategoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.subCategoriaToolStripMenuItem.Text = "Sub Categoria";
-            this.subCategoriaToolStripMenuItem.Click += new System.EventHandler(this.subCategoriaToolStripMenuItem_Click_1);
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vendasToolStripMenuItem,
+            this.cadastrarToolStripMenuItem,
+            this.caixaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1484, 29);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // Principal
             // 
@@ -219,7 +213,6 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novasVendasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarVendasToolStripMenuItem;
@@ -228,15 +221,15 @@
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subCategoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem fTrocoIncialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fTrocoFinalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ftmenu;
         private System.Windows.Forms.ToolStripMenuItem sangriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem subCategoriaToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
