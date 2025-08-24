@@ -30,9 +30,11 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSubCategoria = new System.Windows.Forms.TextBox();
+            this.cBoxSelectCategorias = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnSalvarSbC = new System.Windows.Forms.Button();
+            this.txtSubCategoria = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.listViewSBC = new System.Windows.Forms.ListView();
             this.btnClearSbC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,50 +52,70 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cBoxSelectCategorias);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnSalvarSbC);
             this.groupBox1.Controls.Add(this.txtSubCategoria);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(136, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(440, 78);
+            this.groupBox1.Size = new System.Drawing.Size(440, 136);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sub Categoria";
             // 
-            // label1
+            // cBoxSelectCategorias
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome:";
+            this.cBoxSelectCategorias.FormattingEnabled = true;
+            this.cBoxSelectCategorias.Location = new System.Drawing.Point(17, 47);
+            this.cBoxSelectCategorias.Name = "cBoxSelectCategorias";
+            this.cBoxSelectCategorias.Size = new System.Drawing.Size(252, 24);
+            this.cBoxSelectCategorias.TabIndex = 4;
+            this.cBoxSelectCategorias.Text = "Selecione uma categoria vinculante";
             // 
-            // txtSubCategoria
+            // label2
             // 
-            this.txtSubCategoria.Location = new System.Drawing.Point(18, 50);
-            this.txtSubCategoria.Name = "txtSubCategoria";
-            this.txtSubCategoria.Size = new System.Drawing.Size(215, 22);
-            this.txtSubCategoria.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Categoria vinculante";
             // 
             // btnSalvarSbC
             // 
             this.btnSalvarSbC.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalvarSbC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvarSbC.Location = new System.Drawing.Point(317, 21);
+            this.btnSalvarSbC.Location = new System.Drawing.Point(313, 86);
             this.btnSalvarSbC.Name = "btnSalvarSbC";
             this.btnSalvarSbC.Size = new System.Drawing.Size(117, 43);
             this.btnSalvarSbC.TabIndex = 2;
             this.btnSalvarSbC.Text = "Salvar";
             this.btnSalvarSbC.UseVisualStyleBackColor = false;
             // 
+            // txtSubCategoria
+            // 
+            this.txtSubCategoria.Location = new System.Drawing.Point(18, 105);
+            this.txtSubCategoria.Name = "txtSubCategoria";
+            this.txtSubCategoria.Size = new System.Drawing.Size(215, 22);
+            this.txtSubCategoria.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome:";
+            // 
             // listViewSBC
             // 
             this.listViewSBC.HideSelection = false;
-            this.listViewSBC.Location = new System.Drawing.Point(136, 103);
+            this.listViewSBC.Location = new System.Drawing.Point(136, 154);
             this.listViewSBC.Name = "listViewSBC";
-            this.listViewSBC.Size = new System.Drawing.Size(440, 275);
+            this.listViewSBC.Size = new System.Drawing.Size(440, 242);
             this.listViewSBC.TabIndex = 2;
             this.listViewSBC.UseCompatibleStateImageBehavior = false;
             // 
@@ -102,7 +124,7 @@
             this.btnClearSbC.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnClearSbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearSbC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnClearSbC.Location = new System.Drawing.Point(453, 391);
+            this.btnClearSbC.Location = new System.Drawing.Point(451, 403);
             this.btnClearSbC.Name = "btnClearSbC";
             this.btnClearSbC.Size = new System.Drawing.Size(117, 43);
             this.btnClearSbC.TabIndex = 3;
@@ -137,5 +159,7 @@
         private System.Windows.Forms.Button btnSalvarSbC;
         private System.Windows.Forms.ListView listViewSBC;
         private System.Windows.Forms.Button btnClearSbC;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cBoxSelectCategorias;
     }
 }

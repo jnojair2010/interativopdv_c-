@@ -1,4 +1,5 @@
-﻿using interativopdv.view;
+﻿using interativopdv.model;
+using interativopdv.view;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,6 +72,28 @@ namespace interativopdv
             SubCategorias sub = new SubCategorias();
             sub.MdiParent = this;
             sub.Show();
+        }
+
+        private void onClickAbriJanelaFundoTroco(object sender, EventArgs e)
+        {
+            FundoTroco fundo = new FundoTroco();
+            fundo.MdiParent = this;
+            fundo.Show();
+        }
+
+        private void InserirSrangria(object sender, EventArgs e)
+        {
+            Sangria sangria = new Sangria();
+            sangria.MdiParent = this;
+            sangria.Show();
+
+        }
+
+        private void cadastrarEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastrarEmpresa cadEmpresa = new CadastrarEmpresa();
+            cadEmpresa.MdiParent = this;
+            cadEmpresa.Show();
         }
     }
 

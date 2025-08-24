@@ -46,5 +46,10 @@ namespace interativopdv.view
         {
 
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
