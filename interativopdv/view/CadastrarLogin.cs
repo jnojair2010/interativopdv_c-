@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace interativopdv.view
 {
-    public partial class CadastrarColaborador : Form
+    public partial class CadastrarLogin : Form
     {
-        public CadastrarColaborador()
+        public CadastrarLogin()
         {
             InitializeComponent();
-        }
-
-        private void lblNomeColaborador_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

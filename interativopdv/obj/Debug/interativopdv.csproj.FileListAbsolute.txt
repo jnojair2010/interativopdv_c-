@@ -100,3 +100,5 @@ C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativop
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.FundoTroco.resources
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.Sangria.resources
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.model.CadastrarEmpresa.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.CadastrarColaborador.resources
+C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.CadastrarLogin.resources

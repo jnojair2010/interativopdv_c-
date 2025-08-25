@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSalvarFundoTrocoInicio = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSalvefundoTrocoFim = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -47,26 +47,32 @@
             this.groupBox1.Controls.Add(this.btnSalvarFundoTrocoInicio);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(191, 21);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(159, 21);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(579, 144);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(431, 144);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fundo de Troco inicial";
             // 
-            // groupBox2
+            // btnSalvarFundoTrocoInicio
             // 
-            this.groupBox2.Controls.Add(this.btnSalvefundoTrocoFim);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(191, 190);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(578, 156);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Fundo de Troco Final";
+            this.btnSalvarFundoTrocoInicio.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalvarFundoTrocoInicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalvarFundoTrocoInicio.Location = new System.Drawing.Point(293, 65);
+            this.btnSalvarFundoTrocoInicio.Name = "btnSalvarFundoTrocoInicio";
+            this.btnSalvarFundoTrocoInicio.Size = new System.Drawing.Size(106, 41);
+            this.btnSalvarFundoTrocoInicio.TabIndex = 2;
+            this.btnSalvarFundoTrocoInicio.Text = "Salvar";
+            this.btnSalvarFundoTrocoInicio.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(39, 74);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(218, 22);
+            this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
@@ -77,23 +83,35 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Valor:";
             // 
-            // textBox1
+            // groupBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(360, 22);
-            this.textBox1.TabIndex = 1;
+            this.groupBox2.Controls.Add(this.btnSalvefundoTrocoFim);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(159, 190);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(431, 156);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Fundo de Troco Final";
             // 
-            // btnSalvarFundoTrocoInicio
+            // btnSalvefundoTrocoFim
             // 
-            this.btnSalvarFundoTrocoInicio.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSalvarFundoTrocoInicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvarFundoTrocoInicio.Location = new System.Drawing.Point(438, 67);
-            this.btnSalvarFundoTrocoInicio.Name = "btnSalvarFundoTrocoInicio";
-            this.btnSalvarFundoTrocoInicio.Size = new System.Drawing.Size(106, 41);
-            this.btnSalvarFundoTrocoInicio.TabIndex = 2;
-            this.btnSalvarFundoTrocoInicio.Text = "Salvar";
-            this.btnSalvarFundoTrocoInicio.UseVisualStyleBackColor = false;
+            this.btnSalvefundoTrocoFim.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalvefundoTrocoFim.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalvefundoTrocoFim.Location = new System.Drawing.Point(293, 92);
+            this.btnSalvefundoTrocoFim.Name = "btnSalvefundoTrocoFim";
+            this.btnSalvefundoTrocoFim.Size = new System.Drawing.Size(106, 41);
+            this.btnSalvefundoTrocoFim.TabIndex = 2;
+            this.btnSalvefundoTrocoFim.Text = "Salvar";
+            this.btnSalvefundoTrocoFim.UseVisualStyleBackColor = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(39, 101);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(218, 22);
+            this.textBox2.TabIndex = 1;
             // 
             // label2
             // 
@@ -104,31 +122,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Valor:";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(39, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(360, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // btnSalvefundoTrocoFim
-            // 
-            this.btnSalvefundoTrocoFim.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSalvefundoTrocoFim.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvefundoTrocoFim.Location = new System.Drawing.Point(438, 92);
-            this.btnSalvefundoTrocoFim.Name = "btnSalvefundoTrocoFim";
-            this.btnSalvefundoTrocoFim.Size = new System.Drawing.Size(106, 41);
-            this.btnSalvefundoTrocoFim.TabIndex = 2;
-            this.btnSalvefundoTrocoFim.Text = "Salvar";
-            this.btnSalvefundoTrocoFim.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(130)))), ((int)(((byte)(0)))));
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 362);
+            this.pictureBox1.Size = new System.Drawing.Size(139, 362);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -136,12 +136,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 362);
+            this.ClientSize = new System.Drawing.Size(629, 362);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FundoTroco";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FundoTroco";

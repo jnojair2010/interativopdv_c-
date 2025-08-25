@@ -112,6 +112,12 @@
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="model\PermissoesUserSystem.cs" />
+    <Compile Include="view\CadastrarLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\CadastrarLogin.Designer.cs">
+      <DependentUpon>CadastrarLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\CadastrarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\CadastrarEmpresa.resx">
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\CadastrarLogin.resx">
+      <DependentUpon>CadastrarLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\CadastrarProducto.resx">
       <DependentUpon>CadastrarProducto.cs</DependentUpon>

@@ -95,6 +95,26 @@ namespace interativopdv
             cadEmpresa.MdiParent = this;
             cadEmpresa.Show();
         }
+
+        private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            CadastrarColaborador c  = new CadastrarColaborador();
+            c.MdiParent = this;
+            c.Show();
+        }
+
+        private void alterarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            CadastrarLogin c = new CadastrarLogin();
+            c.MdiParent = this;
+            c.Show();
+
+        }
     }
 
     
