@@ -110,10 +110,20 @@ namespace interativopdv
 
         private void cadastrarToolStripMenuItem5_Click(object sender, EventArgs e)
         {
+        
+
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             CadastrarLogin c = new CadastrarLogin();
             c.MdiParent = this;
             c.Show();
-
         }
     }
 

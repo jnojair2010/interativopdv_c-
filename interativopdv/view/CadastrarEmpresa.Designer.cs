@@ -53,8 +53,10 @@
             this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.lbLogradouro = new System.Windows.Forms.Label();
             this.btnSalvarEmpresa = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -68,7 +70,7 @@
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(22, 22);
+            this.groupBox2.Location = new System.Drawing.Point(138, 30);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(516, 258);
             this.groupBox2.TabIndex = 1;
@@ -157,7 +159,7 @@
             this.groupBox1.Controls.Add(this.txtLogradouro);
             this.groupBox1.Controls.Add(this.lbLogradouro);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(22, 308);
+            this.groupBox1.Location = new System.Drawing.Point(138, 316);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(516, 312);
             this.groupBox1.TabIndex = 2;
@@ -284,18 +286,28 @@
             this.btnSalvarEmpresa.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalvarEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvarEmpresa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvarEmpresa.Location = new System.Drawing.Point(215, 652);
+            this.btnSalvarEmpresa.Location = new System.Drawing.Point(329, 651);
             this.btnSalvarEmpresa.Name = "btnSalvarEmpresa";
             this.btnSalvarEmpresa.Size = new System.Drawing.Size(125, 45);
             this.btnSalvarEmpresa.TabIndex = 3;
             this.btnSalvarEmpresa.Text = "Salvar";
             this.btnSalvarEmpresa.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(130)))), ((int)(((byte)(0)))));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 741);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // CadastrarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 741);
+            this.ClientSize = new System.Drawing.Size(676, 741);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalvarEmpresa);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -306,6 +318,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,5 +349,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox txtComplemento;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
