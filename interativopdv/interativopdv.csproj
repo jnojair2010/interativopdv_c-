@@ -130,6 +130,12 @@
     <Compile Include="view\Categorias.Designer.cs">
       <DependentUpon>Categorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\ConsultarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\ConsultarProduto.Designer.cs">
+      <DependentUpon>ConsultarProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FundoTroco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\ConsultarProduto.resx">
+      <DependentUpon>ConsultarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FundoTroco.resx">
       <DependentUpon>FundoTroco.cs</DependentUpon>
