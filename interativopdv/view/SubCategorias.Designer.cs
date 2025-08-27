@@ -118,6 +118,7 @@
             this.listViewSBC.Size = new System.Drawing.Size(440, 242);
             this.listViewSBC.TabIndex = 2;
             this.listViewSBC.UseCompatibleStateImageBehavior = false;
+            this.listViewSBC.SelectedIndexChanged += new System.EventHandler(this.listViewSBC_SelectedIndexChanged);
             // 
             // btnClearSbC
             // 

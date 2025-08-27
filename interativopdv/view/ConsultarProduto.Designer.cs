@@ -31,11 +31,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCodBarra = new System.Windows.Forms.TextBox();
-            this.btnCodBarra = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnDescricao = new System.Windows.Forms.Button();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCodBarra = new System.Windows.Forms.Button();
+            this.txtCodBarra = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,53 +66,53 @@
             this.groupBox1.Controls.Add(this.btnCodBarra);
             this.groupBox1.Controls.Add(this.txtCodBarra);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(153, 18);
+            this.groupBox1.Location = new System.Drawing.Point(136, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(608, 136);
+            this.groupBox1.Size = new System.Drawing.Size(652, 80);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peaquisa:";
             // 
-            // txtCodBarra
+            // btnDescricao
             // 
-            this.txtCodBarra.Location = new System.Drawing.Point(36, 39);
-            this.txtCodBarra.Name = "txtCodBarra";
-            this.txtCodBarra.Size = new System.Drawing.Size(420, 20);
-            this.txtCodBarra.TabIndex = 2;
+            this.btnDescricao.Location = new System.Drawing.Point(550, 42);
+            this.btnDescricao.Name = "btnDescricao";
+            this.btnDescricao.Size = new System.Drawing.Size(96, 23);
+            this.btnDescricao.TabIndex = 6;
+            this.btnDescricao.Text = "Pesquisar";
+            this.btnDescricao.UseVisualStyleBackColor = true;
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(375, 41);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(169, 20);
+            this.txtDescricao.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(372, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Descrição:";
             // 
             // btnCodBarra
             // 
-            this.btnCodBarra.Location = new System.Drawing.Point(471, 36);
+            this.btnCodBarra.Location = new System.Drawing.Point(214, 39);
             this.btnCodBarra.Name = "btnCodBarra";
             this.btnCodBarra.Size = new System.Drawing.Size(96, 23);
             this.btnCodBarra.TabIndex = 3;
             this.btnCodBarra.Text = "Pesquisar";
             this.btnCodBarra.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // txtCodBarra
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Descrição:";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(39, 92);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(417, 20);
-            this.txtDescricao.TabIndex = 5;
-            // 
-            // btnDescricao
-            // 
-            this.btnDescricao.Location = new System.Drawing.Point(471, 92);
-            this.btnDescricao.Name = "btnDescricao";
-            this.btnDescricao.Size = new System.Drawing.Size(96, 23);
-            this.btnDescricao.TabIndex = 6;
-            this.btnDescricao.Text = "Pesquisar";
-            this.btnDescricao.UseVisualStyleBackColor = true;
+            this.txtCodBarra.Location = new System.Drawing.Point(36, 39);
+            this.txtCodBarra.Name = "txtCodBarra";
+            this.txtCodBarra.Size = new System.Drawing.Size(172, 20);
+            this.txtCodBarra.TabIndex = 2;
             // 
             // ConsultarProduto
             // 
@@ -122,7 +122,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ConsultarProduto";
-            this.Text = "ConsultarProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Consultar Produto";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

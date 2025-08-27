@@ -29,5 +29,10 @@ namespace interativopdv.view
             listViewSBC.Columns.Add("id", 20, HorizontalAlignment.Left);
             listViewSBC.Columns.Add("Categoria Vinculada", 300, HorizontalAlignment.Left);
         }
+
+        private void listViewSBC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
