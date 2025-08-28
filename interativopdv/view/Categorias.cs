@@ -1,4 +1,6 @@
-﻿using System;
+﻿using interativopdv.model;
+using interativopdv.server;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +33,25 @@ namespace interativopdv.view
         private void cBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nameCatalogy = txtCategoria.Text;
+
+            CategoryModel categ = new CategoryModel();
+            categ.Name = nameCatalogy;
+            categ.CompanyId = 1;
+
+            ServiceCategory serv = new ServiceCategory();
+            serv.insertCategoryDao(categ);
+           
+
+        }
+
+        private void btnClearCategoria_Click(object sender, EventArgs e)
+        {
+            txtCategoria.Clear();
         }
     }
 }

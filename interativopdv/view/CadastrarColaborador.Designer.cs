@@ -56,6 +56,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnSalvarColaborador = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cBoxSelectFuncao = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,6 +69,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cBoxSelectFuncao);
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtEmailColab);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtSobrenomeColab);
@@ -74,9 +86,9 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.lblNomeColaborador);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(154, 31);
+            this.groupBox1.Location = new System.Drawing.Point(154, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(506, 207);
+            this.groupBox1.Size = new System.Drawing.Size(506, 324);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoas";
@@ -84,7 +96,7 @@
             // txtEmailColab
             // 
             this.txtEmailColab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailColab.Location = new System.Drawing.Point(240, 159);
+            this.txtEmailColab.Location = new System.Drawing.Point(240, 219);
             this.txtEmailColab.Name = "txtEmailColab";
             this.txtEmailColab.Size = new System.Drawing.Size(214, 22);
             this.txtEmailColab.TabIndex = 9;
@@ -92,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(236, 142);
+            this.label3.Location = new System.Drawing.Point(236, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 8;
@@ -101,7 +113,7 @@
             // txtSobrenomeColab
             // 
             this.txtSobrenomeColab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSobrenomeColab.Location = new System.Drawing.Point(240, 51);
+            this.txtSobrenomeColab.Location = new System.Drawing.Point(240, 111);
             this.txtSobrenomeColab.Name = "txtSobrenomeColab";
             this.txtSobrenomeColab.Size = new System.Drawing.Size(214, 22);
             this.txtSobrenomeColab.TabIndex = 7;
@@ -109,7 +121,7 @@
             // lblSobrenomeColab
             // 
             this.lblSobrenomeColab.AutoSize = true;
-            this.lblSobrenomeColab.Location = new System.Drawing.Point(236, 35);
+            this.lblSobrenomeColab.Location = new System.Drawing.Point(236, 95);
             this.lblSobrenomeColab.Name = "lblSobrenomeColab";
             this.lblSobrenomeColab.Size = new System.Drawing.Size(81, 16);
             this.lblSobrenomeColab.TabIndex = 6;
@@ -118,7 +130,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(41, 158);
+            this.textBox3.Location = new System.Drawing.Point(41, 218);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(189, 22);
             this.textBox3.TabIndex = 5;
@@ -126,7 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 142);
+            this.label2.Location = new System.Drawing.Point(38, 202);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 16);
             this.label2.TabIndex = 4;
@@ -135,7 +147,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(41, 106);
+            this.textBox2.Location = new System.Drawing.Point(41, 166);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(413, 22);
             this.textBox2.TabIndex = 3;
@@ -143,7 +155,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 89);
+            this.label1.Location = new System.Drawing.Point(38, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 16);
             this.label1.TabIndex = 2;
@@ -152,7 +164,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(41, 51);
+            this.textBox1.Location = new System.Drawing.Point(41, 111);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(189, 22);
             this.textBox1.TabIndex = 1;
@@ -160,7 +172,7 @@
             // lblNomeColaborador
             // 
             this.lblNomeColaborador.AutoSize = true;
-            this.lblNomeColaborador.Location = new System.Drawing.Point(38, 35);
+            this.lblNomeColaborador.Location = new System.Drawing.Point(38, 95);
             this.lblNomeColaborador.Name = "lblNomeColaborador";
             this.lblNomeColaborador.Size = new System.Drawing.Size(47, 16);
             this.lblNomeColaborador.TabIndex = 0;
@@ -184,7 +196,7 @@
             this.groupBox2.Controls.Add(this.txtLogradouroColab);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(154, 276);
+            this.groupBox2.Location = new System.Drawing.Point(154, 357);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(506, 321);
             this.groupBox2.TabIndex = 1;
@@ -307,14 +319,16 @@
             // btnSalvarColaborador
             // 
             this.btnSalvarColaborador.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSalvarColaborador.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvarColaborador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvarColaborador.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvarColaborador.Location = new System.Drawing.Point(333, 639);
+            this.btnSalvarColaborador.Location = new System.Drawing.Point(335, 684);
             this.btnSalvarColaborador.Name = "btnSalvarColaborador";
             this.btnSalvarColaborador.Size = new System.Drawing.Size(125, 45);
             this.btnSalvarColaborador.TabIndex = 2;
             this.btnSalvarColaborador.Text = "Salvar";
             this.btnSalvarColaborador.UseVisualStyleBackColor = false;
+            this.btnSalvarColaborador.Click += new System.EventHandler(this.btnSalvarColaborador_Click);
             // 
             // pictureBox1
             // 
@@ -324,6 +338,60 @@
             this.pictureBox1.Size = new System.Drawing.Size(130, 742);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(36, 36);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(148, 16);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "CNPJ Empreendimento";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(41, 56);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(413, 22);
+            this.textBox5.TabIndex = 11;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(38, 257);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 16);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Função:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(237, 259);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(40, 16);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Ativo:";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(240, 278);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(56, 20);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "Ativo";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // cBoxSelectFuncao
+            // 
+            this.cBoxSelectFuncao.FormattingEnabled = true;
+            this.cBoxSelectFuncao.Location = new System.Drawing.Point(39, 276);
+            this.cBoxSelectFuncao.Name = "cBoxSelectFuncao";
+            this.cBoxSelectFuncao.Size = new System.Drawing.Size(183, 24);
+            this.cBoxSelectFuncao.TabIndex = 15;
+            this.cBoxSelectFuncao.Text = "Selecione uma Atividade";
             // 
             // CadastrarColaborador
             // 
@@ -376,5 +444,11 @@
         private System.Windows.Forms.TextBox txtComplColab;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cBoxSelectFuncao;
     }
 }

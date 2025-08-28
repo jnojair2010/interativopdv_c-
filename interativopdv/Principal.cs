@@ -125,6 +125,18 @@ namespace interativopdv
             c.MdiParent = this;
             c.Show();
         }
+
+        private void empreendedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Empreendedor empreendedor = new Empreendedor();
+            empreendedor.MdiParent = this;
+            empreendedor.Show();
+        }
     }
 
     

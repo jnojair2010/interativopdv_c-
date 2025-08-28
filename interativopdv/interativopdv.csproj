@@ -99,6 +99,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dao\ConexaoDb1.cs" />
+    <Compile Include="model\CategoryModel.cs" />
+    <Compile Include="model\FuncoesAtividadeColaboradorModel.cs" />
+    <Compile Include="model\SubCategoryModel.cs" />
+    <Compile Include="server\ServiceAtividadesColabroador.cs" />
+    <Compile Include="server\ServiceCategory.cs" />
     <Compile Include="view\CadastrarColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +140,12 @@
     </Compile>
     <Compile Include="view\ConsultarProduto.Designer.cs">
       <DependentUpon>ConsultarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Empreendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Empreendedor.Designer.cs">
+      <DependentUpon>Empreendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FundoTroco.cs">
       <SubType>Form</SubType>
@@ -197,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\ConsultarProduto.resx">
       <DependentUpon>ConsultarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Empreendedor.resx">
+      <DependentUpon>Empreendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FundoTroco.resx">
       <DependentUpon>FundoTroco.cs</DependentUpon>
