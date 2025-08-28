@@ -10,7 +10,8 @@ namespace interativopdv.model
     {
         private int id;
         private string funcao;
-        private bool status;
+        private bool isActive;
+       
 
         private LoginModel login = new LoginModel();    
 
@@ -25,22 +26,18 @@ namespace interativopdv.model
             get { return funcao; }
             set { funcao = value; }
         }
-        public bool Status  
-        { 
-            get { return status; }
-            set { status = value; }
-        }
-      /*  public void setLogin(LoginModel l)
+        public bool IsActive
         {
-            login.Login = l.Login;
-            login.Password = l.Password;
+            get { return isActive; }
+            set { isActive = value; }
+        } 
 
-        }   */
         public LoginModel Login
         {
             get { return login; }
             set { login = value; }
         }
+
 
     }
 }

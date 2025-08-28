@@ -13,6 +13,7 @@ namespace interativopdv.model
         private string sobreName;
         private string cpf;
         private string dataNascimento;
+        private string email;
 
         private EnderecoModel endereco = new EnderecoModel();
 
@@ -42,6 +43,11 @@ namespace interativopdv.model
         {
             get { return endereco; }
             set { endereco = value; }
+        }
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
         }
     }
 }

@@ -14,6 +14,7 @@ namespace interativopdv.view
 {
     public partial class CadastrarColaborador : Form
     {
+        private ColaboradorModel colaborador = new ColaboradorModel();
         public CadastrarColaborador()
         {
             InitializeComponent();
@@ -43,7 +44,26 @@ namespace interativopdv.view
 
         private void btnSalvarColaborador_Click(object sender, EventArgs e)
         {
+            EnderecoModel endereco = new EnderecoModel();
+            endereco.Bairro = txtBairro.Text;
+            endereco.Cep = txtCep.Text;
+            endereco.Cidade = txtCidade.Text;
+            endereco.Complemento = txtComplemento.Text;
+            endereco.Logradouro = txtLogradouro.Text;
+            endereco.Numero = txtNumero.Text;
+            endereco.Uf = txtEstado.Text;
 
+            colaborador.Endereco = endereco;
+            colaborador.Name = txtName.Text;
+            colaborador.Cpf = txtCpf.Text;
+            colaborador.SobreName = txtSobreName.Text;
+            colaborador.Email = txtEmail.Text;
+           // colaborador.DataNascimento = txtDataNasc.Text;
+            colaborador.IsActive = cboxIsActive.Checked;
+
+            string cnpjLoja = txtCpf.Text;
+
+            MessageBox.Show(" a atividade selecionada é "+cBoxSelectFuncao.Text+" está ativo?"+cboxIsActive.Checked);
         }
     }
 }

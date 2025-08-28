@@ -107,3 +107,5 @@ C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativop
 C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.CadastrarLogin.resources
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.ConsultarProduto.resources
 C:\Users\jair\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.Empreendedor.resources
+C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.ConsultarProduto.resources
+C:\Users\Usuário\source\repos\interativopdv\interativopdv\obj\Debug\interativopdv.view.Empreendedor.resources

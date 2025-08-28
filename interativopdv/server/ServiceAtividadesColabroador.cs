@@ -24,7 +24,7 @@ namespace interativopdv.server
             {
                 if (conn == true)
                 {
-                    var command = new MySqlCommand("select * from funcoes_empoyee;", conexaoDb1.GetConnection());
+                    var command = new MySqlCommand("select * from funcoes_employee;", conexaoDb1.GetConnection());
                     var reader = command.ExecuteReader();
 
                     while (reader.Read())
