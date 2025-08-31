@@ -99,8 +99,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dao\ConexaoDb1.cs" />
+    <Compile Include="model\ProductoModel.cs" />
     <Compile Include="model\CategoryModel.cs" />
     <Compile Include="model\FuncoesAtividadeColaboradorModel.cs" />
+    <Compile Include="model\FundoTroco.cs" />
     <Compile Include="model\SubCategoryModel.cs" />
     <Compile Include="server\Caixa.cs" />
     <Compile Include="server\ServiceAtividadesColabroador.cs" />
