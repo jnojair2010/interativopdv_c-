@@ -1,4 +1,5 @@
 ﻿using interativopdv.model;
+using interativopdv.server;
 using interativopdv.view;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace interativopdv
 {
     public partial class Principal : Form
     {
+        UsuarioSystema usuario = new UsuarioSystema();
         public Principal()
         {
             InitializeComponent();
@@ -137,18 +139,28 @@ namespace interativopdv
         }
 
         private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
-        {   
-            AbrirCaixa caixa = new AbrirCaixa();
-            caixa.MdiParent = this;
-            caixa.Show();
-
+        {
+           // MessageBox.Show(" A permissoa é " + usuario.GetPermissionSystem.MenuCaixa);
+            if (usuario.GetPermissionSystem.MenuCaixa == true)
+            {
+                  AbrirCaixa caixa = new AbrirCaixa();
+                  caixa.MdiParent = this;
+                  caixa.Show();
+            }
+            else
+            {
+                MessageBox.Show(" Você não tem permissão para abrir caixa! não faz part de suas atribuição");
+            }
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FundoTrocoFinal fundoTroco = new FundoTrocoFinal();
-           fundoTroco.MdiParent = this;
-            fundoTroco.Show();
+           
+                FundoTrocoFinal fundoTroco = new FundoTrocoFinal();
+                fundoTroco.MdiParent = this;
+                fundoTroco.Show();
+           
+           
         }
     }
 

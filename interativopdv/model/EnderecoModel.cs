@@ -8,6 +8,7 @@ namespace interativopdv.model
 {
     internal class EnderecoModel
     {
+        private int id;
         private string logradrouro;
         private string numero;
         private string uf;
@@ -16,6 +17,11 @@ namespace interativopdv.model
         private string comlemento;
         private string cep;
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public string  Logradouro
         {
             get { return logradrouro; }

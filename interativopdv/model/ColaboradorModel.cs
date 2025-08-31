@@ -16,6 +16,8 @@ namespace interativopdv.model
         
         private PermissoesUserSystem permissoesColaborador = new PermissoesUserSystem();
 
+        private EnderecoModel endereco = new EnderecoModel();
+
         public int Id
         {
             get { return id; }
@@ -41,6 +43,11 @@ namespace interativopdv.model
         {
             get { return permissoesColaborador;}
             set {  permissoesColaborador= value; }
+        }
+        public EnderecoModel Endereco
+        {
+            get { return endereco; }
+            set { endereco = value; }
         }
 
     }

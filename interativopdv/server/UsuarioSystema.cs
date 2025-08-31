@@ -23,16 +23,34 @@ namespace interativopdv.server
 
 
         }
-        public ColaboradorModel GetUsuarioSystema()
-        {
-            return usuarioSystema;
-        }
-        public ColaboradorModel SetUsuarioSystema(ColaboradorModel colaborador)
+
+        public void SetUsuarioSystema(ColaboradorModel colaborador)
         {
             usuarioSystema.Name = colaborador.Name;
             usuarioSystema.SobreName = colaborador.SobreName;
             usuarioSystema.Cpf = colaborador.Cpf;
-            
+            usuarioSystema.Email = colaborador.Email;
+
+        }
+
+        public void SetEndereco(EnderecoModel endereco)
+        {
+            usuarioSystema.Endereco = endereco;
+        }
+
+        public void PermissionSystem(PermissoesUserSystem p)
+        {
+            usuarioSystema.PermissoesColaborador = p;
+        }
+
+        public PermissoesUserSystem GetPermissionSystem
+        {
+            get { return usuarioSystema.PermissoesColaborador; }
+        }
+
+        public EnderecoModel getEndereco
+        {
+            get { return usuarioSystema.Endereco; }
         }
 
          public string LoginUser()
