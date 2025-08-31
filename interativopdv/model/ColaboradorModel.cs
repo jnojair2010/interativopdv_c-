@@ -12,7 +12,9 @@ namespace interativopdv.model
         private string funcao;
         private bool status;
 
-        private LoginModel login = new LoginModel();    
+        private LoginModel login = new LoginModel();  
+        
+        private PermissoesUserSystem permissoesColaborador = new PermissoesUserSystem();
 
         public int Id
         {
@@ -30,16 +32,15 @@ namespace interativopdv.model
             get { return status; }
             set { status = value; }
         }
-      /*  public void setLogin(LoginModel l)
-        {
-            login.Login = l.Login;
-            login.Password = l.Password;
-
-        }   */
         public LoginModel Login
         {
             get { return login; }
             set { login = value; }
+        }
+        public PermissoesUserSystem PermissoesColaborador
+        {
+            get { return permissoesColaborador;}
+            set {  permissoesColaborador= value; }
         }
 
     }

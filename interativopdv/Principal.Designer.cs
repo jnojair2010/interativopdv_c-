@@ -42,7 +42,6 @@
             this.categoriaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ftmenu = new System.Windows.Forms.ToolStripMenuItem();
             this.sangriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -59,6 +58,7 @@
             this.cadastrarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,38 +156,31 @@
             // 
             this.caixaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarToolStripMenuItem2,
-            this.sangriaToolStripMenuItem});
+            this.sangriaToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
             this.caixaToolStripMenuItem.Size = new System.Drawing.Size(59, 25);
             this.caixaToolStripMenuItem.Text = "Caixa";
             // 
             // cadastrarToolStripMenuItem2
             // 
-            this.cadastrarToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ftmenu});
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(147, 26);
-            this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
-            // 
-            // ftmenu
-            // 
-            this.ftmenu.Name = "ftmenu";
-            this.ftmenu.Size = new System.Drawing.Size(166, 26);
-            this.ftmenu.Text = "Fundo Troco";
-            this.ftmenu.Click += new System.EventHandler(this.onClickAbriJanelaFundoTroco);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.cadastrarToolStripMenuItem2.Text = "Abrir";
+            this.cadastrarToolStripMenuItem2.Click += new System.EventHandler(this.cadastrarToolStripMenuItem2_Click);
             // 
             // sangriaToolStripMenuItem
             // 
             this.sangriaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem});
             this.sangriaToolStripMenuItem.Name = "sangriaToolStripMenuItem";
-            this.sangriaToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
+            this.sangriaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.sangriaToolStripMenuItem.Text = "Sangria";
             // 
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.inserirToolStripMenuItem.Text = "Inserir";
             this.inserirToolStripMenuItem.Click += new System.EventHandler(this.InserirSrangria);
             // 
@@ -220,20 +213,20 @@
             // cadastrarEmpresaToolStripMenuItem
             // 
             this.cadastrarEmpresaToolStripMenuItem.Name = "cadastrarEmpresaToolStripMenuItem";
-            this.cadastrarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.cadastrarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.cadastrarEmpresaToolStripMenuItem.Text = "Cadastrar";
             this.cadastrarEmpresaToolStripMenuItem.Click += new System.EventHandler(this.cadastrarEmpresaToolStripMenuItem_Click);
             // 
             // cadastrarColaboradorToolStripMenuItem
             // 
             this.cadastrarColaboradorToolStripMenuItem.Name = "cadastrarColaboradorToolStripMenuItem";
-            this.cadastrarColaboradorToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.cadastrarColaboradorToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.cadastrarColaboradorToolStripMenuItem.Text = "Consultar";
             // 
             // alterarToolStripMenuItem1
             // 
             this.alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
-            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(147, 26);
             this.alterarToolStripMenuItem1.Text = "Alterar";
             // 
             // colaboradorToolStripMenuItem
@@ -287,21 +280,28 @@
             // cadastrarToolStripMenuItem4
             // 
             this.cadastrarToolStripMenuItem4.Name = "cadastrarToolStripMenuItem4";
-            this.cadastrarToolStripMenuItem4.Size = new System.Drawing.Size(180, 26);
+            this.cadastrarToolStripMenuItem4.Size = new System.Drawing.Size(147, 26);
             this.cadastrarToolStripMenuItem4.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem4.Click += new System.EventHandler(this.cadastrarToolStripMenuItem4_Click);
             // 
             // consultarToolStripMenuItem2
             // 
             this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
-            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(147, 26);
             this.consultarToolStripMenuItem2.Text = "Consultar";
             // 
             // alterarToolStripMenuItem2
             // 
             this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
-            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(147, 26);
             this.alterarToolStripMenuItem2.Text = "Alterar";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -338,7 +338,6 @@
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem ftmenu;
         private System.Windows.Forms.ToolStripMenuItem sangriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -355,5 +354,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cadastrarLoginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }

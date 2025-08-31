@@ -15,6 +15,7 @@ namespace interativopdv.model
         private string login;
         private string password;
         private bool isLogado = false;
+        private int userid;
 
 
         public int IdLogin
@@ -36,6 +37,10 @@ namespace interativopdv.model
         {
             get { return isLogado; }
             set { isLogado = value; }
+        }
+        public int Userid
+        {   get { return userid; } 
+            set { userid = value; }
         }
 
     }

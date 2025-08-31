@@ -12,13 +12,16 @@ using System.Windows.Forms;
 
 namespace interativopdv.server
 {
-    internal class ServerLogin
+    internal class ServeLogin
     {
+        // para retira a linha abaixo
+       // public ColaboradorModel colaboradorLogado = new ColaboradorModel();  
 
-        public static ColaboradorModel colaboradorLogado = new ColaboradorModel();
-
+       // para fazer a conexção http em backAnd
         private LoginRequest requesteLogin = new LoginRequest();
 
+        // usuatio statito do system
+        UsuarioSystema userSystem = new UsuarioSystema();
 
         public void ServerLogar(LoginModel login)
         {
@@ -42,10 +45,15 @@ namespace interativopdv.server
                         lm.IdLogin = reader.GetInt32("idLogin");
                         lm.Login = reader.GetString("login");
                         lm.Password = reader.GetString("Password");
+                        lm.Userid = reader.GetInt32("userId");
 
-                        colaboradorLogado.Login = lm;
+                        //confirma que login correto confirmado com retorno de dado db login e password
+                        lm.IsLogado = true;
+
+                        userSystem.UserSystemLogin(lm);
 
                     }
+                    gerColaboradorDao(lm.Userid);
 
                 }
 
@@ -57,17 +65,11 @@ namespace interativopdv.server
             }
         }
 
-        public LoginModel IsToLogado()
+        public void gerColaboradorDao(int id)
         {
-            return colaboradorLogado.Login;
+            ServiceColaborador serviceColaborador = new ServiceColaborador();
+            serviceColaborador.getDaoColaborador(id);
         }
 
-        public ColaboradorModel GetColaboradorModel
-        {
-            get
-            {
-                return colaboradorLogado;
-            }
-        }
     }
 }

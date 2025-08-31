@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cBoxSelectFuncao = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtEmailColab = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSobrenomeColab = new System.Windows.Forms.TextBox();
@@ -56,12 +62,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnSalvarColaborador = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.cBoxSelectFuncao = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,6 +92,60 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoas";
+            // 
+            // cBoxSelectFuncao
+            // 
+            this.cBoxSelectFuncao.FormattingEnabled = true;
+            this.cBoxSelectFuncao.Location = new System.Drawing.Point(39, 276);
+            this.cBoxSelectFuncao.Name = "cBoxSelectFuncao";
+            this.cBoxSelectFuncao.Size = new System.Drawing.Size(183, 24);
+            this.cBoxSelectFuncao.TabIndex = 15;
+            this.cBoxSelectFuncao.Text = "Selecione uma Atividade";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(240, 278);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(56, 20);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "Ativo";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(237, 259);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(40, 16);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Ativo:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(38, 257);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 16);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Função:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(41, 56);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(413, 22);
+            this.textBox5.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(36, 36);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(148, 16);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "CNPJ Empreendimento";
             // 
             // txtEmailColab
             // 
@@ -322,9 +376,9 @@
             this.btnSalvarColaborador.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvarColaborador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvarColaborador.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvarColaborador.Location = new System.Drawing.Point(335, 684);
+            this.btnSalvarColaborador.Location = new System.Drawing.Point(335, 687);
             this.btnSalvarColaborador.Name = "btnSalvarColaborador";
-            this.btnSalvarColaborador.Size = new System.Drawing.Size(125, 45);
+            this.btnSalvarColaborador.Size = new System.Drawing.Size(106, 40);
             this.btnSalvarColaborador.TabIndex = 2;
             this.btnSalvarColaborador.Text = "Salvar";
             this.btnSalvarColaborador.UseVisualStyleBackColor = false;
@@ -338,60 +392,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(130, 742);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(36, 36);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(148, 16);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "CNPJ Empreendimento";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(41, 56);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(413, 22);
-            this.textBox5.TabIndex = 11;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(38, 257);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 16);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Função:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(237, 259);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(40, 16);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Ativo:";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(240, 278);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 20);
-            this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "Ativo";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // cBoxSelectFuncao
-            // 
-            this.cBoxSelectFuncao.FormattingEnabled = true;
-            this.cBoxSelectFuncao.Location = new System.Drawing.Point(39, 276);
-            this.cBoxSelectFuncao.Name = "cBoxSelectFuncao";
-            this.cBoxSelectFuncao.Size = new System.Drawing.Size(183, 24);
-            this.cBoxSelectFuncao.TabIndex = 15;
-            this.cBoxSelectFuncao.Text = "Selecione uma Atividade";
             // 
             // CadastrarColaborador
             // 

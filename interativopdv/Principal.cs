@@ -76,9 +76,7 @@ namespace interativopdv
 
         private void onClickAbriJanelaFundoTroco(object sender, EventArgs e)
         {
-            FundoTroco fundo = new FundoTroco();
-            fundo.MdiParent = this;
-            fundo.Show();
+           
         }
 
         private void InserirSrangria(object sender, EventArgs e)
@@ -136,6 +134,21 @@ namespace interativopdv
             Empreendedor empreendedor = new Empreendedor();
             empreendedor.MdiParent = this;
             empreendedor.Show();
+        }
+
+        private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {   
+            AbrirCaixa caixa = new AbrirCaixa();
+            caixa.MdiParent = this;
+            caixa.Show();
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FundoTrocoFinal fundoTroco = new FundoTrocoFinal();
+           fundoTroco.MdiParent = this;
+            fundoTroco.Show();
         }
     }
 

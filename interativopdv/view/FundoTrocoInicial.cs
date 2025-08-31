@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace interativopdv.view
 {
-    public partial class FundoTroco : Form
+    public partial class FundoTrocoInicial : Form
     {
-        public FundoTroco()
+        public FundoTrocoInicial()
         {
             InitializeComponent();
+        }
+
+        private void btnSalvarFundoTrocoInicio_Click(object sender, EventArgs e)
+        {
+            string fundodeTrocoInicial = txtFTrocoInicial.Text;
+
+
+            this.Close();
         }
     }
 }

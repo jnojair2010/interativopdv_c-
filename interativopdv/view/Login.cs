@@ -14,13 +14,16 @@ namespace interativopdv
 {
     public partial class Login : Form
     {
+        // usuatio statito do system
+        UsuarioSystema userSystem = new UsuarioSystema();
+
         public Login()
         {
             InitializeComponent();
         }
 
         int countErroLogin = 0;
-        private ServerLogin LgServer = new ServerLogin();
+        private ServeLogin LgServer = new ServeLogin();
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -46,7 +49,9 @@ namespace interativopdv
             modelLogin.Password = password;
             LgServer.ServerLogar(modelLogin);
 
-            if (LgServer.GetColaboradorModel.Login.IdLogin > 0)
+            
+
+            if (userSystem.idLoginUser() > 0)
             {
                 // MessageBox.Show(" dentro do form login o id é " + LgServer.GetColaboradorModel.Login.IdLogin);
                 this.Close();
@@ -69,15 +74,15 @@ namespace interativopdv
 
         private void isLogado()
         {
-            LoginModel islogado = LgServer.IsToLogado();
+            bool isLogado = userSystem.isLoginUser();
 
-            if (islogado.IsLogado != true)
+            if (isLogado != true)
             {
-               // MessageBox.Show(" o usuario não está logado!");
+                //MessageBox.Show(" o usuario não está logado!" + userSystem.isLoginUser());
             }
             else
             {
-               // MessageBox.Show(" o usuario  está logado!");
+               // MessageBox.Show(" o usuario  está logado e seu estado de login é: "+ userSystem.isLoginUser());
             }
 
         }
