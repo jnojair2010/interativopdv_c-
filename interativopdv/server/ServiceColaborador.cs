@@ -30,6 +30,7 @@ namespace interativopdv.server
 
                       while (reader.Read())
                       {
+                        userSystem.usu
                         MessageBox.Show(" o id na requisição do colaborador é: "+ reader.GetString("assignment"));
 
                       }

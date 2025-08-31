@@ -23,6 +23,17 @@ namespace interativopdv.server
 
 
         }
+        public ColaboradorModel GetUsuarioSystema()
+        {
+            return usuarioSystema;
+        }
+        public ColaboradorModel SetUsuarioSystema(ColaboradorModel colaborador)
+        {
+            usuarioSystema.Name = colaborador.Name;
+            usuarioSystema.SobreName = colaborador.SobreName;
+            usuarioSystema.Cpf = colaborador.Cpf;
+            
+        }
 
          public string LoginUser()
          {

@@ -96,11 +96,12 @@
             // cBoxSelectFuncao
             // 
             this.cBoxSelectFuncao.FormattingEnabled = true;
-            this.cBoxSelectFuncao.Location = new System.Drawing.Point(39, 276);
+            this.cBoxSelectFuncao.Location = new System.Drawing.Point(39, 274);
             this.cBoxSelectFuncao.Name = "cBoxSelectFuncao";
             this.cBoxSelectFuncao.Size = new System.Drawing.Size(183, 24);
             this.cBoxSelectFuncao.TabIndex = 15;
             this.cBoxSelectFuncao.Text = "Selecione uma Atividade";
+            this.cBoxSelectFuncao.SelectedIndexChanged += new System.EventHandler(this.cBoxSelectFuncao_SelectedIndexChanged);
             // 
             // checkBox1
             // 

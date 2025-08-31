@@ -45,5 +45,10 @@ namespace interativopdv.view
         {
 
         }
+
+        private void cBoxSelectFuncao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
