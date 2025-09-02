@@ -30,11 +30,11 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSalvarEmpreendedor = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSobreNameEntrepreneur = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNameEntrepreneur = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -44,11 +44,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnSalvarEmpreendedor);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtSobreNameEntrepreneur);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNameEntrepreneur);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(148, 33);
@@ -69,13 +69,14 @@
             this.btnSalvarEmpreendedor.TabIndex = 6;
             this.btnSalvarEmpreendedor.Text = "Salvar";
             this.btnSalvarEmpreendedor.UseVisualStyleBackColor = false;
+            this.btnSalvarEmpreendedor.Click += new System.EventHandler(this.btnSalvarEmpreendedor_Click);
             // 
-            // textBox3
+            // txtCpf
             // 
-            this.textBox3.Location = new System.Drawing.Point(36, 181);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(443, 22);
-            this.textBox3.TabIndex = 5;
+            this.txtCpf.Location = new System.Drawing.Point(36, 181);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(443, 22);
+            this.txtCpf.TabIndex = 5;
             // 
             // label3
             // 
@@ -86,12 +87,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "CPF:";
             // 
-            // textBox2
+            // txtSobreNameEntrepreneur
             // 
-            this.textBox2.Location = new System.Drawing.Point(36, 122);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(443, 22);
-            this.textBox2.TabIndex = 3;
+            this.txtSobreNameEntrepreneur.Location = new System.Drawing.Point(36, 122);
+            this.txtSobreNameEntrepreneur.Name = "txtSobreNameEntrepreneur";
+            this.txtSobreNameEntrepreneur.Size = new System.Drawing.Size(443, 22);
+            this.txtSobreNameEntrepreneur.TabIndex = 3;
             // 
             // label2
             // 
@@ -102,12 +103,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Sobre Nome:";
             // 
-            // textBox1
+            // txtNameEntrepreneur
             // 
-            this.textBox1.Location = new System.Drawing.Point(33, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(446, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtNameEntrepreneur.Location = new System.Drawing.Point(33, 59);
+            this.txtNameEntrepreneur.Name = "txtNameEntrepreneur";
+            this.txtNameEntrepreneur.Size = new System.Drawing.Size(446, 22);
+            this.txtNameEntrepreneur.TabIndex = 1;
             // 
             // label1
             // 
@@ -149,11 +150,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNameEntrepreneur;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalvarEmpreendedor;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSobreNameEntrepreneur;
     }
 }

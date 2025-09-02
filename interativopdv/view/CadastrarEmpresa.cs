@@ -36,5 +36,24 @@ namespace interativopdv.model
         {
 
         }
+
+        private void btnSalvarEmpresa_Click(object sender, EventArgs e)
+        {
+            string cnpj = txtCnpJEmterprise.Text;
+            string cpfOwner = txtOwner.Text;
+            string nameEnyterprice = txtNameEnterprice.Text;
+            string nameFantasy = txtNameFantasy.Text;
+
+            EnderecoModel endereco = new EnderecoModel();
+
+            endereco.Logradouro = txtLogradouro.Text;
+            endereco.Numero = txtNumber.Text;
+            endereco.Cep = txtCep.Text;
+            endereco.Bairro = txtBairro.Text;
+            endereco.Cidade = txtCidade.Text;
+            endereco.Uf = txtEstado.Text;
+            endereco.Complemento = txtComplemento.Text;
+
+        }
     }
 }

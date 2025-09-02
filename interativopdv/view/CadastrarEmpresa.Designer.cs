@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNameFantasy = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtOwner = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCnpJEmterprise = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNameEnterprice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtCep = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             this.lalNumero = new System.Windows.Forms.Label();
             this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.lbLogradouro = new System.Windows.Forms.Label();
@@ -61,13 +61,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txtNameFantasy);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txtOwner);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtCnpJEmterprise);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtNameEnterprice);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(138, 30);
@@ -77,12 +77,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados da Empresa";
             // 
-            // textBox4
+            // txtNameFantasy
             // 
-            this.textBox4.Location = new System.Drawing.Point(25, 186);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(466, 22);
-            this.textBox4.TabIndex = 8;
+            this.txtNameFantasy.Location = new System.Drawing.Point(25, 186);
+            this.txtNameFantasy.Name = "txtNameFantasy";
+            this.txtNameFantasy.Size = new System.Drawing.Size(466, 22);
+            this.txtNameFantasy.TabIndex = 8;
             // 
             // label4
             // 
@@ -93,12 +93,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Nome Fantasia";
             // 
-            // textBox3
+            // txtOwner
             // 
-            this.textBox3.Location = new System.Drawing.Point(253, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(238, 22);
-            this.textBox3.TabIndex = 6;
+            this.txtOwner.Location = new System.Drawing.Point(253, 61);
+            this.txtOwner.Name = "txtOwner";
+            this.txtOwner.Size = new System.Drawing.Size(238, 22);
+            this.txtOwner.TabIndex = 6;
             // 
             // label3
             // 
@@ -109,12 +109,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "CPF Propriétario:";
             // 
-            // textBox2
+            // txtCnpJEmterprise
             // 
-            this.textBox2.Location = new System.Drawing.Point(22, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
-            this.textBox2.TabIndex = 4;
+            this.txtCnpJEmterprise.Location = new System.Drawing.Point(22, 61);
+            this.txtCnpJEmterprise.Name = "txtCnpJEmterprise";
+            this.txtCnpJEmterprise.Size = new System.Drawing.Size(215, 22);
+            this.txtCnpJEmterprise.TabIndex = 4;
             // 
             // label2
             // 
@@ -125,13 +125,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "CNPJ:";
             // 
-            // textBox1
+            // txtNameEnterprice
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(469, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNameEnterprice.Location = new System.Drawing.Point(22, 120);
+            this.txtNameEnterprice.Name = "txtNameEnterprice";
+            this.txtNameEnterprice.Size = new System.Drawing.Size(469, 22);
+            this.txtNameEnterprice.TabIndex = 1;
+            this.txtNameEnterprice.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -146,15 +146,15 @@
             // 
             this.groupBox1.Controls.Add(this.txtComplemento);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtBairro);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtCep);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtEstado);
             this.groupBox1.Controls.Add(this.lblEstado);
             this.groupBox1.Controls.Add(this.txtCidade);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtNumero);
+            this.groupBox1.Controls.Add(this.txtNumber);
             this.groupBox1.Controls.Add(this.lalNumero);
             this.groupBox1.Controls.Add(this.txtLogradouro);
             this.groupBox1.Controls.Add(this.lbLogradouro);
@@ -183,12 +183,12 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Complemento:";
             // 
-            // textBox7
+            // txtBairro
             // 
-            this.textBox7.Location = new System.Drawing.Point(31, 191);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(206, 22);
-            this.textBox7.TabIndex = 11;
+            this.txtBairro.Location = new System.Drawing.Point(31, 191);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(206, 22);
+            this.txtBairro.TabIndex = 11;
             // 
             // label7
             // 
@@ -199,12 +199,12 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Bairro:";
             // 
-            // textBox6
+            // txtCep
             // 
-            this.textBox6.Location = new System.Drawing.Point(253, 124);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(235, 22);
-            this.textBox6.TabIndex = 9;
+            this.txtCep.Location = new System.Drawing.Point(253, 124);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(235, 22);
+            this.txtCep.TabIndex = 9;
             // 
             // label6
             // 
@@ -215,12 +215,12 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Cep:";
             // 
-            // textBox5
+            // txtEstado
             // 
-            this.textBox5.Location = new System.Drawing.Point(31, 246);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(206, 22);
-            this.textBox5.TabIndex = 7;
+            this.txtEstado.Location = new System.Drawing.Point(31, 246);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(206, 22);
+            this.txtEstado.TabIndex = 7;
             // 
             // lblEstado
             // 
@@ -249,12 +249,12 @@
             this.label5.Text = "Cidade:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtNumero
+            // txtNumber
             // 
-            this.txtNumero.Location = new System.Drawing.Point(31, 124);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(206, 22);
-            this.txtNumero.TabIndex = 3;
+            this.txtNumber.Location = new System.Drawing.Point(31, 124);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(206, 22);
+            this.txtNumber.TabIndex = 3;
             // 
             // lalNumero
             // 
@@ -292,6 +292,7 @@
             this.btnSalvarEmpresa.TabIndex = 3;
             this.btnSalvarEmpresa.Text = "Salvar";
             this.btnSalvarEmpresa.UseVisualStyleBackColor = false;
+            this.btnSalvarEmpresa.Click += new System.EventHandler(this.btnSalvarEmpresa_Click);
             // 
             // pictureBox1
             // 
@@ -326,28 +327,28 @@
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNameEnterprice;
+        private System.Windows.Forms.TextBox txtCnpJEmterprise;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtOwner;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNameFantasy;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSalvarEmpresa;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label lalNumero;
         private System.Windows.Forms.TextBox txtLogradouro;
         private System.Windows.Forms.Label lbLogradouro;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

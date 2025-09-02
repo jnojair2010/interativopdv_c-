@@ -16,5 +16,12 @@ namespace interativopdv.view
         {
             InitializeComponent();
         }
+
+        private void btnSalvarEmpreendedor_Click(object sender, EventArgs e)
+        {
+            string nameEntrePreneur = txtNameEntrepreneur.Text;
+            string sobreName = txtSobreNameEntrepreneur.Text;
+            string cpf = txtCpf.Text;
+        }
     }
 }
