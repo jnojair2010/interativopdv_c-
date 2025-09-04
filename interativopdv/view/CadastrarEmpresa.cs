@@ -16,7 +16,9 @@ namespace interativopdv.model
     {
         ServiceOwner servicoOwner = new ServiceOwner();
 
-        OwnerModel ownerModel = new OwnerModel();  
+        OwnerModel ownerModel = new OwnerModel();
+
+        ServiceCompany serviceCompany = new ServiceCompany();
         public CadastrarEmpresa()
         {
             InitializeComponent();
@@ -44,20 +46,25 @@ namespace interativopdv.model
 
         private void btnSalvarEmpresa_Click(object sender, EventArgs e)
         {
-            string cnpj = txtCnpJEmterprise.Text;
-            string cpfOwner = txtCpfOwner.Text;
-            string nameEnyterprice = txtNameEnterprice.Text;
-            string nameFantasy = txtNameFantasy.Text;
-
+   
+            CompanyModel companyModel = new CompanyModel();
             EnderecoModel endereco = new EnderecoModel();
 
-            endereco.Logradouro = txtLogradouro.Text;
-            endereco.Numero = txtNumber.Text;
-            endereco.Cep = txtCep.Text;
-            endereco.Bairro = txtBairro.Text;
-            endereco.Cidade = txtCidade.Text;
-            endereco.Uf = txtEstado.Text;
-            endereco.Complemento = txtComplemento.Text;
+            companyModel.Cnpj= txtCnpJEmterprise.Text.Trim();
+            companyModel.NameFantasia = txtNameFantasy.Text.Trim();
+            companyModel.NameCompany = txtNameEnterprice.Text.Trim();
+
+            endereco.Logradouro = txtLogradouro.Text.Trim();
+            endereco.Numero = txtNumber.Text.Trim();
+            endereco.Cep = txtCep.Text.Trim();
+            endereco.Bairro = txtBairro.Text.Trim();
+            endereco.Cidade = txtCidade.Text.Trim();
+            endereco.Uf = txtEstado.Text.Trim();
+            endereco.Complemento = txtComplemento.Text.Trim();
+
+            companyModel.Endereco = endereco;
+
+            serviceCompany.insertCompany(companyModel);
 
         }
 
@@ -67,30 +74,32 @@ namespace interativopdv.model
         {
             OwnerModel owner = new OwnerModel();
 
-            string cpf = txtCpfOwner.Text;
+            string cpf = txtCpfOwner.Text.Trim();
 
             owner.Cpf = cpf;
 
             if (cpf.Length>10)
             {
-                owner = this.servicoOwner.getOwner(owner);
+                serviceCompany.getDaoOwner(owner);
 
-                if (owner.FirstName==null)
+                owner = serviceCompany.getOwner();
+
+                
+                if (owner.IdOwner>0)
                 {
-                    MessageBox.Show("Cpf Invalido, Verifique e faça correções válida!");
+                    SelectOwner select = new SelectOwner();
+                    select.Show();
                 }
                 else
                 {
-                    MessageBox.Show("o nome do empreeededor é: " + owner.FirstName);
-                    ownerModel.Cpf = owner.Cpf;
-                    SelectOwner selectOwner = new SelectOwner();
-                    selectOwner.Show();
-
+                    MessageBox.Show("Não tem cadastro para esse Cpf:");
                 }
+
+
             }
             else
             {
-                MessageBox.Show("cpf Invalido");
+                MessageBox.Show("cpf In:");
                 txtCpfOwner.Clear();
             }
             

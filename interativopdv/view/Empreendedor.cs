@@ -24,9 +24,9 @@ namespace interativopdv.view
         {
             OwnerModel owner = new OwnerModel();
 
-            owner.FirstName = txtNameEntrepreneur.Text;
-            owner.LastName = txtSobreNameEntrepreneur.Text;
-            owner.Cpf = txtCpf.Text;
+            owner.FirstName = txtNameEntrepreneur.Text.Trim();
+            owner.LastName = txtSobreNameEntrepreneur.Text.Trim();
+            owner.Cpf = txtCpf.Text.Trim();
 
             serviceOwner.insertOwner(owner);
 
