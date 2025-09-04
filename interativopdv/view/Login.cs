@@ -45,8 +45,8 @@ namespace interativopdv
             isLogado();
 
             LoginModel modelLogin = new LoginModel();
-            modelLogin.Login = login;
-            modelLogin.Password = password;
+            modelLogin.Login = /*login*/ "jnojair2010@gmail.com";
+            modelLogin.Password = /*password*/ "Lwx5nk@Lwx5nk";
             LgServer.ServerLogar(modelLogin);
 
             

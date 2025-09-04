@@ -28,13 +28,11 @@ namespace interativopdv.server
                     command.Parameters.AddWithValue("@name", category.Name);
                     command.Parameters.AddWithValue("@company", category.CompanyId);
                     command.ExecuteNonQuery();
-                    // MessageBox.Show(" entrou no if do try da inserção ");
                 }
                 else
                 {
                     Console.WriteLine(" conexção não foi bem sucedida!");
 
-                   // MessageBox.Show(" entrou no else do try da inserção");
                 }
 
                     return true;

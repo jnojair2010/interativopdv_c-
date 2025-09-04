@@ -37,6 +37,11 @@ namespace interativopdv.dao
             return connection;
         }
 
+        public void CloseConnect()
+        {
+            connection.Close();
+        }
+
 
 
     }

@@ -31,7 +31,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtNameFantasy = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtOwner = new System.Windows.Forms.TextBox();
+            this.txtCpfOwner = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCnpJEmterprise = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             // 
             this.groupBox2.Controls.Add(this.txtNameFantasy);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.txtOwner);
+            this.groupBox2.Controls.Add(this.txtCpfOwner);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txtCnpJEmterprise);
             this.groupBox2.Controls.Add(this.label2);
@@ -93,12 +93,13 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Nome Fantasia";
             // 
-            // txtOwner
+            // txtCpfOwner
             // 
-            this.txtOwner.Location = new System.Drawing.Point(253, 61);
-            this.txtOwner.Name = "txtOwner";
-            this.txtOwner.Size = new System.Drawing.Size(238, 22);
-            this.txtOwner.TabIndex = 6;
+            this.txtCpfOwner.Location = new System.Drawing.Point(253, 61);
+            this.txtCpfOwner.Name = "txtCpfOwner";
+            this.txtCpfOwner.Size = new System.Drawing.Size(238, 22);
+            this.txtCpfOwner.TabIndex = 6;
+            this.txtCpfOwner.Leave += new System.EventHandler(this.getOwner);
             // 
             // label3
             // 
@@ -330,7 +331,7 @@
         private System.Windows.Forms.TextBox txtNameEnterprice;
         private System.Windows.Forms.TextBox txtCnpJEmterprise;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtOwner;
+        private System.Windows.Forms.TextBox txtCpfOwner;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNameFantasy;
         private System.Windows.Forms.Label label4;

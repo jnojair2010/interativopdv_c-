@@ -1,4 +1,6 @@
-﻿using System;
+﻿using interativopdv.model;
+using interativopdv.server;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,7 @@ namespace interativopdv.view
 {
     public partial class Empreendedor : Form
     {
+        ServiceOwner serviceOwner = new ServiceOwner();
         public Empreendedor()
         {
             InitializeComponent();
@@ -19,9 +22,18 @@ namespace interativopdv.view
 
         private void btnSalvarEmpreendedor_Click(object sender, EventArgs e)
         {
-            string nameEntrePreneur = txtNameEntrepreneur.Text;
-            string sobreName = txtSobreNameEntrepreneur.Text;
-            string cpf = txtCpf.Text;
+            OwnerModel owner = new OwnerModel();
+
+            owner.FirstName = txtNameEntrepreneur.Text;
+            owner.LastName = txtSobreNameEntrepreneur.Text;
+            owner.Cpf = txtCpf.Text;
+
+            serviceOwner.insertOwner(owner);
+
+            txtNameEntrepreneur.Clear();
+            txtSobreNameEntrepreneur.Clear();
+            txtCpf.Clear();
+
         }
     }
 }
