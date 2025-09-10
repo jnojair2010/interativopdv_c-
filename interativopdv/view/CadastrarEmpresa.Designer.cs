@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.maskCpfOwner = new System.Windows.Forms.MaskedTextBox();
+            this.maskCnpj = new System.Windows.Forms.MaskedTextBox();
             this.txtNameFantasy = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCpfOwner = new System.Windows.Forms.TextBox();
@@ -38,6 +40,7 @@
             this.txtNameEnterprice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
@@ -61,6 +64,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.maskCpfOwner);
+            this.groupBox2.Controls.Add(this.maskCnpj);
             this.groupBox2.Controls.Add(this.txtNameFantasy);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtCpfOwner);
@@ -76,6 +81,25 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados da Empresa";
+            // 
+            // maskCpfOwner
+            // 
+            this.maskCpfOwner.Location = new System.Drawing.Point(254, 62);
+            this.maskCpfOwner.Mask = "000.000.000-00";
+            this.maskCpfOwner.Name = "maskCpfOwner";
+            this.maskCpfOwner.Size = new System.Drawing.Size(237, 22);
+            this.maskCpfOwner.TabIndex = 10;
+            this.maskCpfOwner.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskCpfOwner_MaskInputRejected);
+            this.maskCpfOwner.Leave += new System.EventHandler(this.getOwner);
+            // 
+            // maskCnpj
+            // 
+            this.maskCnpj.Location = new System.Drawing.Point(22, 61);
+            this.maskCnpj.Mask = "00-000-000/0000-00";
+            this.maskCnpj.Name = "maskCnpj";
+            this.maskCnpj.Size = new System.Drawing.Size(223, 22);
+            this.maskCnpj.TabIndex = 9;
+            this.maskCnpj.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // txtNameFantasy
             // 
@@ -145,6 +169,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.maskedTextBox3);
             this.groupBox1.Controls.Add(this.txtComplemento);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtBairro);
@@ -167,6 +192,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Endereço";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Location = new System.Drawing.Point(254, 124);
+            this.maskedTextBox3.Mask = "00.000-000";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(233, 22);
+            this.maskedTextBox3.TabIndex = 14;
             // 
             // txtComplemento
             // 
@@ -352,5 +385,8 @@
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MaskedTextBox maskCnpj;
+        private System.Windows.Forms.MaskedTextBox maskCpfOwner;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
     }
 }

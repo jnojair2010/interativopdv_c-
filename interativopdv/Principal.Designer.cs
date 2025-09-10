@@ -44,6 +44,7 @@
             this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.sangriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.companiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,11 +55,11 @@
             this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vinculaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empreendedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,7 +166,7 @@
             // cadastrarToolStripMenuItem2
             // 
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
+            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(133, 26);
             this.cadastrarToolStripMenuItem2.Text = "Abrir";
             this.cadastrarToolStripMenuItem2.Click += new System.EventHandler(this.cadastrarToolStripMenuItem2_Click);
             // 
@@ -174,15 +175,22 @@
             this.sangriaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem});
             this.sangriaToolStripMenuItem.Name = "sangriaToolStripMenuItem";
-            this.sangriaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.sangriaToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.sangriaToolStripMenuItem.Text = "Sangria";
             // 
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
             this.inserirToolStripMenuItem.Text = "Inserir";
             this.inserirToolStripMenuItem.Click += new System.EventHandler(this.InserirSrangria);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -222,6 +230,7 @@
             this.cadastrarColaboradorToolStripMenuItem.Name = "cadastrarColaboradorToolStripMenuItem";
             this.cadastrarColaboradorToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.cadastrarColaboradorToolStripMenuItem.Text = "Consultar";
+            this.cadastrarColaboradorToolStripMenuItem.Click += new System.EventHandler(this.cadastrarColaboradorToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem1
             // 
@@ -235,7 +244,8 @@
             this.cadastrarToolStripMenuItem3,
             this.consultarToolStripMenuItem1,
             this.alterarToolStripMenuItem,
-            this.cadastrarLoginToolStripMenuItem});
+            this.cadastrarLoginToolStripMenuItem,
+            this.vinculaçãoToolStripMenuItem});
             this.colaboradorToolStripMenuItem.Name = "colaboradorToolStripMenuItem";
             this.colaboradorToolStripMenuItem.Size = new System.Drawing.Size(109, 25);
             this.colaboradorToolStripMenuItem.Text = "Colaborador";
@@ -266,6 +276,13 @@
             this.cadastrarLoginToolStripMenuItem.Text = "Cadastrar Login";
             this.cadastrarLoginToolStripMenuItem.Click += new System.EventHandler(this.cadastrarLoginToolStripMenuItem_Click);
             // 
+            // vinculaçãoToolStripMenuItem
+            // 
+            this.vinculaçãoToolStripMenuItem.Name = "vinculaçãoToolStripMenuItem";
+            this.vinculaçãoToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.vinculaçãoToolStripMenuItem.Text = "Configuração";
+            this.vinculaçãoToolStripMenuItem.Click += new System.EventHandler(this.vinculaçãoToolStripMenuItem_Click);
+            // 
             // empreendedorToolStripMenuItem
             // 
             this.empreendedorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -295,13 +312,6 @@
             this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
             this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(147, 26);
             this.alterarToolStripMenuItem2.Text = "Alterar";
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -355,5 +365,6 @@
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cadastrarLoginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vinculaçãoToolStripMenuItem;
     }
 }

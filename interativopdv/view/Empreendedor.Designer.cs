@@ -30,19 +30,21 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSalvarEmpreendedor = new System.Windows.Forms.Button();
-            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSobreNameEntrepreneur = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNameEntrepreneur = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.maskCpf = new System.Windows.Forms.MaskedTextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.maskCpf);
             this.groupBox1.Controls.Add(this.btnSalvarEmpreendedor);
             this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Controls.Add(this.label3);
@@ -53,7 +55,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(148, 33);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(525, 284);
+            this.groupBox1.Size = new System.Drawing.Size(355, 284);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoas";
@@ -63,20 +65,13 @@
             this.btnSalvarEmpreendedor.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSalvarEmpreendedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvarEmpreendedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalvarEmpreendedor.Location = new System.Drawing.Point(183, 227);
+            this.btnSalvarEmpreendedor.Location = new System.Drawing.Point(104, 223);
             this.btnSalvarEmpreendedor.Name = "btnSalvarEmpreendedor";
             this.btnSalvarEmpreendedor.Size = new System.Drawing.Size(106, 40);
             this.btnSalvarEmpreendedor.TabIndex = 6;
             this.btnSalvarEmpreendedor.Text = "Salvar";
             this.btnSalvarEmpreendedor.UseVisualStyleBackColor = false;
             this.btnSalvarEmpreendedor.Click += new System.EventHandler(this.btnSalvarEmpreendedor_Click);
-            // 
-            // txtCpf
-            // 
-            this.txtCpf.Location = new System.Drawing.Point(36, 181);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(443, 22);
-            this.txtCpf.TabIndex = 5;
             // 
             // label3
             // 
@@ -91,7 +86,7 @@
             // 
             this.txtSobreNameEntrepreneur.Location = new System.Drawing.Point(36, 122);
             this.txtSobreNameEntrepreneur.Name = "txtSobreNameEntrepreneur";
-            this.txtSobreNameEntrepreneur.Size = new System.Drawing.Size(443, 22);
+            this.txtSobreNameEntrepreneur.Size = new System.Drawing.Size(283, 22);
             this.txtSobreNameEntrepreneur.TabIndex = 3;
             // 
             // label2
@@ -107,7 +102,7 @@
             // 
             this.txtNameEntrepreneur.Location = new System.Drawing.Point(33, 59);
             this.txtNameEntrepreneur.Name = "txtNameEntrepreneur";
-            this.txtNameEntrepreneur.Size = new System.Drawing.Size(446, 22);
+            this.txtNameEntrepreneur.Size = new System.Drawing.Size(286, 22);
             this.txtNameEntrepreneur.TabIndex = 1;
             // 
             // label1
@@ -128,11 +123,26 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // maskCpf
+            // 
+            this.maskCpf.Location = new System.Drawing.Point(36, 181);
+            this.maskCpf.Mask = "000.000.000-00";
+            this.maskCpf.Name = "maskCpf";
+            this.maskCpf.Size = new System.Drawing.Size(283, 22);
+            this.maskCpf.TabIndex = 7;
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.Location = new System.Drawing.Point(36, 181);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(283, 22);
+            this.txtCpf.TabIndex = 5;
+            // 
             // Empreendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 329);
+            this.ClientSize = new System.Drawing.Size(515, 329);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Empreendedor";
@@ -153,8 +163,9 @@
         private System.Windows.Forms.TextBox txtNameEntrepreneur;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalvarEmpreendedor;
-        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSobreNameEntrepreneur;
+        private System.Windows.Forms.MaskedTextBox maskCpf;
+        private System.Windows.Forms.TextBox txtCpf;
     }
 }

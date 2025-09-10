@@ -119,6 +119,12 @@
     <Compile Include="view\AbrirCaixa.Designer.cs">
       <DependentUpon>AbrirCaixa.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\BindEmployeeCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\BindEmployeeCompany.Designer.cs">
+      <DependentUpon>BindEmployeeCompany.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\CadastrarColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,12 @@
     </Compile>
     <Compile Include="view\ConsultarProduto.Designer.cs">
       <DependentUpon>ConsultarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Data.Designer.cs">
+      <DependentUpon>Data.cs</DependentUpon>
     </Compile>
     <Compile Include="view\Empreendedor.cs">
       <SubType>Form</SubType>
@@ -221,6 +233,9 @@
     <EmbeddedResource Include="view\AbrirCaixa.resx">
       <DependentUpon>AbrirCaixa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\BindEmployeeCompany.resx">
+      <DependentUpon>BindEmployeeCompany.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\CadastrarColaborador.resx">
       <DependentUpon>CadastrarColaborador.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\ConsultarProduto.resx">
       <DependentUpon>ConsultarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Data.resx">
+      <DependentUpon>Data.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\Empreendedor.resx">
       <DependentUpon>Empreendedor.cs</DependentUpon>

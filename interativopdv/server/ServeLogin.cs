@@ -44,7 +44,7 @@ namespace interativopdv.server
                     {
                         lm.IdLogin = reader.GetInt32("idLogin");
                         lm.Login = reader.GetString("login");
-                        lm.Password = reader.GetString("Password");
+                        lm.Password = reader.GetString("password");
                         lm.Userid = reader.GetInt32("userId");
 
                         //confirma que login correto confirmado com retorno de dado db login e password

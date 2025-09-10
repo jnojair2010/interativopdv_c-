@@ -14,7 +14,6 @@ namespace interativopdv.model
 {
     public partial class CadastrarEmpresa : Form
     {
-        ServiceOwner servicoOwner = new ServiceOwner();
 
         OwnerModel ownerModel = new OwnerModel();
 
@@ -50,7 +49,7 @@ namespace interativopdv.model
             CompanyModel companyModel = new CompanyModel();
             EnderecoModel endereco = new EnderecoModel();
 
-            companyModel.Cnpj= txtCnpJEmterprise.Text.Trim();
+            companyModel.Cnpj= maskCnpj.Text.Trim().Replace("/", "").Replace("-", "");
             companyModel.NameFantasia = txtNameFantasy.Text.Trim();
             companyModel.NameCompany = txtNameEnterprice.Text.Trim();
 
@@ -73,36 +72,42 @@ namespace interativopdv.model
         private void getOwner(object sender, EventArgs e)
         {
             OwnerModel owner = new OwnerModel();
+            string cpf = maskCpfOwner.Text.Trim().Replace(",", "").Replace("-", "");
 
-            string cpf = txtCpfOwner.Text.Trim();
+                    owner.Cpf = cpf;
 
-            owner.Cpf = cpf;
-
-            if (cpf.Length>10)
-            {
-                serviceCompany.getDaoOwner(owner);
-
-                owner = serviceCompany.getOwner();
-
-                
-                if (owner.IdOwner>0)
-                {
-                    SelectOwner select = new SelectOwner();
-                    select.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Não tem cadastro para esse Cpf:");
-                }
+                    if (cpf.Length > 10)
+                    {
+                        owner = serviceCompany.getDaoOwner(owner);
 
 
-            }
-            else
-            {
-                MessageBox.Show("cpf In:");
-                txtCpfOwner.Clear();
-            }
-            
+                        if (owner.IdOwner > 0)
+                        {
+                            SelectOwner select = new SelectOwner();
+                            select.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Não tem cadastro para esse Cpf:");
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("cpf In:");
+                        txtCpfOwner.Clear();
+                    }
+             
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void maskCpfOwner_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            getOwner(sender, e);
         }
     }
 }

@@ -26,7 +26,7 @@ namespace interativopdv.view
 
             owner.FirstName = txtNameEntrepreneur.Text.Trim();
             owner.LastName = txtSobreNameEntrepreneur.Text.Trim();
-            owner.Cpf = txtCpf.Text.Trim();
+            owner.Cpf = maskCpf.Text.Trim().Replace(",","").Replace("-","");
 
             serviceOwner.insertOwner(owner);
 

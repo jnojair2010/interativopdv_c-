@@ -162,6 +162,20 @@ namespace interativopdv
            
            
         }
+
+        private void cadastrarColaboradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Data d = new Data();
+            d.MdiParent = this;
+            d.Show();
+        }
+
+        private void vinculaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BindEmployeeCompany bindEmployeeCompany = new BindEmployeeCompany();
+            bindEmployeeCompany.MdiParent = this;
+            bindEmployeeCompany.Show();
+        }
     }
 
     

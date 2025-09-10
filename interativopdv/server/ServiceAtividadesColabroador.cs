@@ -31,7 +31,7 @@ namespace interativopdv.server
                     {
                         FuncoesAtividadeColaboradorModel funcao = new FuncoesAtividadeColaboradorModel();
                         funcao.IdFuncoes = reader.GetInt32("idFuncoes");
-                        funcao.Name = reader.GetString("Name");
+                        funcao.Name = reader.GetString("name");
 
                         listaFuncoes.Add(funcao);
 

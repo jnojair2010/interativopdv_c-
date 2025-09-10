@@ -43,11 +43,11 @@ namespace interativopdv.view
 
         private void btnSalvarColaborador_Click(object sender, EventArgs e)
         {
-            string cnpj = txtCnpjEmpreendimento.Text;
             string nameColaborador = txtName.Text;
             string sobreNamecolaborado = txtSobrenomeColab.Text;
-            string cpf = txtCepf.Text;
-            string dataNasc = txtDataNascimento.Text;
+            string cpf = maskCpfEmployee.Text;
+
+            string dataNasc = maskDataNasc.Text;
             string email = txtEmailColab.Text;
             string funcoa = cBoxSelectFuncao.Text;
 
@@ -71,27 +71,6 @@ namespace interativopdv.view
             endereco.Uf = endEstado;
             endereco.Complemento = endComplemento;
 
-
-            // permissoes
-            bool registryPricePurchse = cBRegistryPricePurchace.Checked;
-            bool viewPricePurchase = cBViewPricePurchase.Checked;
-            bool menuEnterprise = cBMenuEmpresa.Checked;
-            bool menuEmployee = cBMenuColaborador.Checked;
-            bool menuSuplier = cBMenuFornecedor.Checked;
-            bool menuProducto = cBMenuProducto.Checked;
-            bool menuBox = cBMenuCaixa.Checked;
-
-            PermissoesUserSystem permission = new PermissoesUserSystem();
-
-            permission.EnterComPrice = registryPricePurchse;
-            permission.InputPricePurchase = viewPricePurchase;
-            permission.MenuEmpresa = menuEnterprise;
-            permission.MenuColaborador = menuEmployee;
-            permission.MenuFornecedor = menuSuplier;
-            permission.MenuProdutos = menuProducto;
-            permission.MenuCaixa = menuBox;
-
-
         }
 
         private void cBoxSelectFuncao_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,6 +81,11 @@ namespace interativopdv.view
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void getCompany(object sender, EventArgs e)
+        {
+           
         }
     }
 }
