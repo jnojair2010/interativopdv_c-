@@ -9,6 +9,7 @@ namespace interativopdv.model
 {
     internal class PessoaModel
     {
+        private int idUser;
         private string name;
         private string sobreName;
         private string cpf;
@@ -17,6 +18,11 @@ namespace interativopdv.model
 
         private EnderecoModel endereco = new EnderecoModel();
 
+        public int IdUser
+        {
+            get { return idUser; }
+            set { idUser = value; }
+        }
         public string Name
         {
             get { return name; }

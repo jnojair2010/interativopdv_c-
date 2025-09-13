@@ -35,14 +35,13 @@
             this.cBMenuFornecedor = new System.Windows.Forms.CheckBox();
             this.cBMenuColaborador = new System.Windows.Forms.CheckBox();
             this.cBMenuEmpresa = new System.Windows.Forms.CheckBox();
-            this.cBViewPricePurchase = new System.Windows.Forms.CheckBox();
-            this.cBRegistryPricePurchace = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.viewPricePurchase = new System.Windows.Forms.CheckBox();
+            this.registryPricePurchace = new System.Windows.Forms.CheckBox();
             this.grBindin = new System.Windows.Forms.GroupBox();
-            this.mask_cpf = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.maskCnpj = new System.Windows.Forms.MaskedTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mask_cpf = new System.Windows.Forms.MaskedTextBox();
             this.grBoxVincular = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -54,7 +53,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(130)))), ((int)(((byte)(0)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 522);
+            this.pictureBox1.Size = new System.Drawing.Size(130, 362);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -65,10 +64,10 @@
             this.groupBox3.Controls.Add(this.cBMenuFornecedor);
             this.groupBox3.Controls.Add(this.cBMenuColaborador);
             this.groupBox3.Controls.Add(this.cBMenuEmpresa);
-            this.groupBox3.Controls.Add(this.cBViewPricePurchase);
-            this.groupBox3.Controls.Add(this.cBRegistryPricePurchace);
+            this.groupBox3.Controls.Add(this.viewPricePurchase);
+            this.groupBox3.Controls.Add(this.registryPricePurchace);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(139, 315);
+            this.groupBox3.Location = new System.Drawing.Point(139, 198);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(457, 150);
             this.groupBox3.TabIndex = 5;
@@ -79,7 +78,7 @@
             // cBMenuCaixa
             // 
             this.cBMenuCaixa.AutoSize = true;
-            this.cBMenuCaixa.Location = new System.Drawing.Point(240, 85);
+            this.cBMenuCaixa.Location = new System.Drawing.Point(257, 85);
             this.cBMenuCaixa.Name = "cBMenuCaixa";
             this.cBMenuCaixa.Size = new System.Drawing.Size(111, 24);
             this.cBMenuCaixa.TabIndex = 6;
@@ -89,7 +88,7 @@
             // cBMenuProducto
             // 
             this.cBMenuProducto.AutoSize = true;
-            this.cBMenuProducto.Location = new System.Drawing.Point(240, 60);
+            this.cBMenuProducto.Location = new System.Drawing.Point(257, 60);
             this.cBMenuProducto.Name = "cBMenuProducto";
             this.cBMenuProducto.Size = new System.Drawing.Size(128, 24);
             this.cBMenuProducto.TabIndex = 5;
@@ -99,7 +98,7 @@
             // cBMenuFornecedor
             // 
             this.cBMenuFornecedor.AutoSize = true;
-            this.cBMenuFornecedor.Location = new System.Drawing.Point(240, 35);
+            this.cBMenuFornecedor.Location = new System.Drawing.Point(259, 35);
             this.cBMenuFornecedor.Name = "cBMenuFornecedor";
             this.cBMenuFornecedor.Size = new System.Drawing.Size(154, 24);
             this.cBMenuFornecedor.TabIndex = 4;
@@ -109,7 +108,7 @@
             // cBMenuColaborador
             // 
             this.cBMenuColaborador.AutoSize = true;
-            this.cBMenuColaborador.Location = new System.Drawing.Point(47, 110);
+            this.cBMenuColaborador.Location = new System.Drawing.Point(28, 115);
             this.cBMenuColaborador.Name = "cBMenuColaborador";
             this.cBMenuColaborador.Size = new System.Drawing.Size(159, 24);
             this.cBMenuColaborador.TabIndex = 3;
@@ -119,45 +118,34 @@
             // cBMenuEmpresa
             // 
             this.cBMenuEmpresa.AutoSize = true;
-            this.cBMenuEmpresa.Location = new System.Drawing.Point(47, 85);
+            this.cBMenuEmpresa.Location = new System.Drawing.Point(28, 85);
             this.cBMenuEmpresa.Name = "cBMenuEmpresa";
             this.cBMenuEmpresa.Size = new System.Drawing.Size(136, 24);
             this.cBMenuEmpresa.TabIndex = 2;
             this.cBMenuEmpresa.Text = "Menu Empresa";
             this.cBMenuEmpresa.UseVisualStyleBackColor = true;
             // 
-            // cBViewPricePurchase
+            // viewPricePurchase
             // 
-            this.cBViewPricePurchase.AutoSize = true;
-            this.cBViewPricePurchase.Location = new System.Drawing.Point(47, 60);
-            this.cBViewPricePurchase.Name = "cBViewPricePurchase";
-            this.cBViewPricePurchase.Size = new System.Drawing.Size(223, 24);
-            this.cBViewPricePurchase.TabIndex = 1;
-            this.cBViewPricePurchase.Text = "Visualizar Preço de Compra";
-            this.cBViewPricePurchase.UseVisualStyleBackColor = true;
+            this.viewPricePurchase.AutoSize = true;
+            this.viewPricePurchase.Location = new System.Drawing.Point(28, 60);
+            this.viewPricePurchase.Name = "viewPricePurchase";
+            this.viewPricePurchase.Size = new System.Drawing.Size(223, 24);
+            this.viewPricePurchase.TabIndex = 1;
+            this.viewPricePurchase.Text = "Visualizar Preço de Compra";
+            this.viewPricePurchase.UseVisualStyleBackColor = true;
+            this.viewPricePurchase.CheckedChanged += new System.EventHandler(this.checkedRegistrPricePurchase);
             // 
-            // cBRegistryPricePurchace
+            // registryPricePurchace
             // 
-            this.cBRegistryPricePurchace.AutoSize = true;
-            this.cBRegistryPricePurchace.Location = new System.Drawing.Point(47, 35);
-            this.cBRegistryPricePurchace.Name = "cBRegistryPricePurchace";
-            this.cBRegistryPricePurchace.Size = new System.Drawing.Size(225, 24);
-            this.cBRegistryPricePurchace.TabIndex = 0;
-            this.cBRegistryPricePurchace.Text = "Cadastrar Preço de Compra";
-            this.cBRegistryPricePurchace.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(284, 474);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 36);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.registryPricePurchace.AutoSize = true;
+            this.registryPricePurchace.Location = new System.Drawing.Point(28, 35);
+            this.registryPricePurchace.Name = "registryPricePurchace";
+            this.registryPricePurchace.Size = new System.Drawing.Size(225, 24);
+            this.registryPricePurchace.TabIndex = 0;
+            this.registryPricePurchace.Text = "Cadastrar Preço de Compra";
+            this.registryPricePurchace.UseVisualStyleBackColor = true;
+            this.registryPricePurchace.CheckedChanged += new System.EventHandler(this.checkedRegistrPricePurchase);
             // 
             // grBindin
             // 
@@ -173,13 +161,24 @@
             this.grBindin.TabStop = false;
             this.grBindin.Text = "Binding Associado ";
             // 
-            // mask_cpf
+            // maskCnpj
             // 
-            this.mask_cpf.Location = new System.Drawing.Point(28, 52);
-            this.mask_cpf.Mask = "000.000.000-00";
-            this.mask_cpf.Name = "mask_cpf";
-            this.mask_cpf.Size = new System.Drawing.Size(140, 26);
-            this.mask_cpf.TabIndex = 0;
+            this.maskCnpj.Location = new System.Drawing.Point(206, 51);
+            this.maskCnpj.Mask = "00.000.000/0000-00";
+            this.maskCnpj.Name = "maskCnpj";
+            this.maskCnpj.Size = new System.Drawing.Size(242, 26);
+            this.maskCnpj.TabIndex = 3;
+            this.maskCnpj.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskCnpj_MaskInputRejected);
+            this.maskCnpj.Leave += new System.EventHandler(this.getEmpreendimentos);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(202, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Loja:";
             // 
             // label1
             // 
@@ -191,23 +190,14 @@
             this.label1.Text = "Colaborador:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // mask_cpf
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(202, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Loja:";
-            // 
-            // maskCnpj
-            // 
-            this.maskCnpj.Location = new System.Drawing.Point(206, 51);
-            this.maskCnpj.Mask = "00.000.000/0000-00";
-            this.maskCnpj.Name = "maskCnpj";
-            this.maskCnpj.Size = new System.Drawing.Size(242, 26);
-            this.maskCnpj.TabIndex = 3;
-            this.maskCnpj.Leave += new System.EventHandler(this.getEmpreendimentos);
+            this.mask_cpf.Location = new System.Drawing.Point(28, 52);
+            this.mask_cpf.Mask = "000.000.000-00";
+            this.mask_cpf.Name = "mask_cpf";
+            this.mask_cpf.Size = new System.Drawing.Size(140, 26);
+            this.mask_cpf.TabIndex = 0;
+            this.mask_cpf.Leave += new System.EventHandler(this.toPresent);
             // 
             // grBoxVincular
             // 
@@ -222,10 +212,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 519);
+            this.ClientSize = new System.Drawing.Size(602, 361);
             this.Controls.Add(this.grBoxVincular);
             this.Controls.Add(this.grBindin);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Name = "BindEmployeeCompany";
@@ -250,9 +239,8 @@
         private System.Windows.Forms.CheckBox cBMenuFornecedor;
         private System.Windows.Forms.CheckBox cBMenuColaborador;
         private System.Windows.Forms.CheckBox cBMenuEmpresa;
-        private System.Windows.Forms.CheckBox cBViewPricePurchase;
-        private System.Windows.Forms.CheckBox cBRegistryPricePurchace;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox viewPricePurchase;
+        private System.Windows.Forms.CheckBox registryPricePurchace;
         private System.Windows.Forms.GroupBox grBindin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

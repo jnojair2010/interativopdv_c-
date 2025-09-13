@@ -96,5 +96,135 @@ namespace interativopdv.server
                 MessageBox.Show(" erro em buscar permissoes " + e.Message);
             }
         }
+
+        public ColaboradorModel getColaborador(string cpf)
+        {
+            ColaboradorModel colaborador = new ColaboradorModel();
+            
+            bool conn = conexaoDb1.OpenConexao();
+            try
+            {
+                var command = new MySqlCommand("select u.firstName, u.lastName, u.cpf, u.idUser, e.idEmployee, e.assignment," +
+                " e.isActive from user as u inner join employee as e ON u.idUser = e.idUser where u.cpf =@cpf", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@cpf", cpf);
+                var reader = command.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                    colaborador.Name = reader.GetString("firstName");
+                    colaborador.SobreName = reader.GetString("lastName");
+                    colaborador.Cpf = reader.GetString("cpf");
+                    colaborador.IdUser = reader.GetInt32("idUser");
+                    colaborador.Id = reader.GetInt32("idEmployee");
+                    colaborador.Status = reader.GetBoolean("isActive");
+                    colaborador.Funcao = reader.GetString("assignment");
+                }
+            }
+            catch (Exception e) { 
+
+            }
+
+            return colaborador;
+        }
+
+        public void InsertBindEmployeeCompany(int idEmployee, int idCompany)
+        {
+
+           bool conn = conexaoDb1.OpenConexao();
+
+                try
+                {
+                    var command = new MySqlCommand("insert into employee_company (employeeId, company_id, isBind) values (@idEmployee, @idCompany, @isBind)", conexaoDb1.GetConnection());
+                    command.Parameters.AddWithValue("@idEmployee", idEmployee);
+                    command.Parameters.AddWithValue("@idCompany", idCompany);
+                    command.Parameters.AddWithValue("@isBind", true);
+
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show(" Vinculação realizzado com sucesso!");
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show($" erro sql no bindempl ");
+                }
+
+        }
+        public void UnBindingEmployeeCompany(int idEmployee, int idCompany)
+        {
+            bool conn = conexaoDb1.OpenConexao();
+            try
+            {
+                var command = new MySqlCommand("UPDATE employee_company SET isBind = @isBind where employeeId=@idEmployee AND company_id=@idCompany", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@idEmployee", idEmployee);
+                command.Parameters.AddWithValue("@idCompany", idCompany);
+                command.Parameters.AddWithValue("@isBind", false);
+
+                command.ExecuteNonQuery();
+
+                MessageBox.Show(" Desvinculação bem sucedido!");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($" erro sql "+e.Message);
+            }
+            conexaoDb1.CloseConnect();
+
+        }
+
+        private void BindingEmployeeCompany(int idEmployee, int idCompany)
+        {
+            bool conn = conexaoDb1.OpenConexao();
+            try
+            {
+                var command = new MySqlCommand("UPDATE employee_company SET isBind = @isBind where employeeId=@idEmployee AND company_id=@idCompany", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@idEmployee", idEmployee);
+                command.Parameters.AddWithValue("@idCompany", idCompany);
+                command.Parameters.AddWithValue("@isBind", true);
+
+                command.ExecuteNonQuery();
+
+                MessageBox.Show(" Vinculação sucedido!");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($" erro sql " + e.Message);
+            }
+            conexaoDb1.CloseConnect();
+        }
+
+        public void verificarBindEmployeeCompany(int idEmployee, int idCompany)
+        {
+            bool conn = conexaoDb1.OpenConexao();
+
+            try
+            {
+                var command = new MySqlCommand("select * from employee_company where employeeId =@idEmployee and company_id=@idCompany", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@idEmployee", idEmployee);
+                command.Parameters.AddWithValue("@idCompany", idCompany);
+
+                var reader = command.ExecuteReader();
+
+                if(reader.Read()== true)
+                {
+                    if (reader.GetBoolean("isBind") == false)
+                    {
+                        BindingEmployeeCompany(idEmployee, idCompany);
+                    }
+                }
+                else
+                {
+                    InsertBindEmployeeCompany(idEmployee, idCompany);
+                }
+            
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($" erro sql verificação ");
+            }
+
+            conexaoDb1.CloseConnect();
+
+        }
     }
 }

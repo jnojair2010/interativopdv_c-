@@ -33,16 +33,6 @@ namespace interativopdv.server
             return owner;
        }
 
-   
- 
-
-        //retorna o nome completo do empreendedor
-        public string getNameAndSobreName()
-        {
-            company.IdOwner = owner.IdOwner;
-            return owner.FirstName + " " + owner.LastName;
-        }
-
         // inserir empresa no banco de dado
         public void insertCompany(CompanyModel c)
         {
@@ -121,7 +111,6 @@ namespace interativopdv.server
                     Console.WriteLine(" Entrou no erro do if variavel connecção");
 
                 }
-
             }
             catch (MySqlException e)
             {
@@ -130,6 +119,26 @@ namespace interativopdv.server
 
             conexaoDb1.CloseConnect();
             return isExist;
+        }
+
+        public CompanyModel GetCompany(string cnpj)
+        {
+            CompanyModel company = new CompanyModel();
+
+            bool conn = conexaoDb1.OpenConexao();
+
+            var command = new MySqlCommand("select name, idCompany,ownerId, nameFantasia from company where cnpj=@cnpj", conexaoDb1.GetConnection());
+            command.Parameters.AddWithValue("@cnpj", cnpj);
+            var reader = command.ExecuteReader();
+
+            while (reader.Read() == true) {
+                company.IdComapany = reader.GetInt32("idCompany");
+                company.IdOwner = reader.GetInt32("ownerId");
+                company.NameCompany = reader.GetString("name");
+                company.NameFantasia = reader.GetString("nameFantasia");
+            }
+
+            return company;
         }
 
     }

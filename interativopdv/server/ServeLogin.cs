@@ -14,8 +14,7 @@ namespace interativopdv.server
 {
     internal class ServeLogin
     {
-        // para retira a linha abaixo
-       // public ColaboradorModel colaboradorLogado = new ColaboradorModel();  
+
 
        // para fazer a conexção http em backAnd
         private LoginRequest requesteLogin = new LoginRequest();
@@ -64,7 +63,6 @@ namespace interativopdv.server
 
             }
         }
-
         public void gerColaboradorDao(int id)
         {
             ServiceColaborador serviceColaborador = new ServiceColaborador();
