@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCadPassword = new System.Windows.Forms.TextBox();
+            this.txtRegistryPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRegristryLogin = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCadLogin = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalvarLogin = new System.Windows.Forms.Button();
             this.btnAtualizarLogin = new System.Windows.Forms.Button();
@@ -44,11 +44,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtCadPassword);
+            this.groupBox1.Controls.Add(this.txtRegistryPassword);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtRegristryLogin);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtCadLogin);
+            this.groupBox1.Controls.Add(this.txtCpf);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(149, 28);
@@ -58,12 +58,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastrar Login";
             // 
-            // txtCadPassword
+            // txtRegistryPassword
             // 
-            this.txtCadPassword.Location = new System.Drawing.Point(38, 181);
-            this.txtCadPassword.Name = "txtCadPassword";
-            this.txtCadPassword.Size = new System.Drawing.Size(269, 22);
-            this.txtCadPassword.TabIndex = 5;
+            this.txtRegistryPassword.Location = new System.Drawing.Point(38, 181);
+            this.txtRegistryPassword.Name = "txtRegistryPassword";
+            this.txtRegistryPassword.PasswordChar = '*';
+            this.txtRegistryPassword.Size = new System.Drawing.Size(269, 22);
+            this.txtRegistryPassword.TabIndex = 5;
             // 
             // label3
             // 
@@ -74,12 +75,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Password:";
             // 
-            // textBox1
+            // txtRegristryLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 22);
-            this.textBox1.TabIndex = 3;
+            this.txtRegristryLogin.Location = new System.Drawing.Point(35, 119);
+            this.txtRegristryLogin.Name = "txtRegristryLogin";
+            this.txtRegristryLogin.Size = new System.Drawing.Size(272, 22);
+            this.txtRegristryLogin.TabIndex = 3;
             // 
             // label2
             // 
@@ -90,21 +91,21 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Login:";
             // 
-            // txtCadLogin
+            // txtCpf
             // 
-            this.txtCadLogin.Location = new System.Drawing.Point(35, 58);
-            this.txtCadLogin.Name = "txtCadLogin";
-            this.txtCadLogin.Size = new System.Drawing.Size(272, 22);
-            this.txtCadLogin.TabIndex = 1;
+            this.txtCpf.Location = new System.Drawing.Point(35, 58);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(272, 22);
+            this.txtCpf.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(32, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 16);
+            this.label1.Size = new System.Drawing.Size(36, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cpf:";
+            this.label1.Text = "CPF:";
             // 
             // btnSalvarLogin
             // 
@@ -117,6 +118,7 @@
             this.btnSalvarLogin.TabIndex = 1;
             this.btnSalvarLogin.Text = "Salvar";
             this.btnSalvarLogin.UseVisualStyleBackColor = false;
+            this.btnSalvarLogin.Click += new System.EventHandler(this.btnSalvarLogin_Click);
             // 
             // btnAtualizarLogin
             // 
@@ -161,11 +163,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtCadPassword;
+        private System.Windows.Forms.TextBox txtRegistryPassword;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRegristryLogin;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCadLogin;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalvarLogin;
         private System.Windows.Forms.Button btnAtualizarLogin;

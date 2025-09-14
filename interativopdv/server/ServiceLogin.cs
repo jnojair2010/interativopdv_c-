@@ -12,12 +12,13 @@ using System.Windows.Forms;
 
 namespace interativopdv.server
 {
-    internal class ServeLogin
+    internal class ServiceLogin
     {
 
 
        // para fazer a conexção http em backAnd
         private LoginRequest requesteLogin = new LoginRequest();
+        ConexaoDb1 conexaoDb1 = new ConexaoDb1();
 
         // usuatio statito do system
         UsuarioSystema userSystem = new UsuarioSystema();
@@ -27,7 +28,7 @@ namespace interativopdv.server
            // colaboradorLogado.mLogin = login;
 
             LoginModel lm = new LoginModel();
-            ConexaoDb1 conexaoDb1 = new ConexaoDb1();
+            
             bool conn = conexaoDb1.OpenConexao();
 
             try
@@ -62,11 +63,59 @@ namespace interativopdv.server
                 MessageBox.Show(" erro  " + e.Message);
 
             }
+            conexaoDb1.CloseConnect();
         }
         public void gerColaboradorDao(int id)
         {
             ServiceColaborador serviceColaborador = new ServiceColaborador();
             serviceColaborador.getDaoColaborador(id);
+        }
+
+        public void insertLogin(ColaboradorModel colaborador)
+        {
+            colaborador.IdUser = selectColaborador(colaborador);
+
+             try
+              {
+                  var command = new MySqlCommand("insert into login (login, password, userId) values (@login, @password, @userId)", conexaoDb1.GetConnection());
+                  command.Parameters.AddWithValue("@login", colaborador.Login.Login);
+                  command.Parameters.AddWithValue("@password", colaborador.Login.Password);
+                  command.Parameters.AddWithValue("@userId", colaborador.IdUser);
+
+                  command.ExecuteNonQuery();
+
+                  MessageBox.Show("Login Realizado com sucesso!");
+              }
+              catch (Exception e)
+              {
+
+              }
+              conexaoDb1.CloseConnect();
+        }
+
+        private int selectColaborador(ColaboradorModel colaborador)
+        {
+            bool conn = conexaoDb1.OpenConexao();
+
+            try
+            {
+                var command = new MySqlCommand("select idUser from user where cpf=@cpf;", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@cpf", colaborador.Cpf);
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    colaborador.IdUser = reader.GetInt32("idUser");
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($" erro sql {e.Message}");
+            }
+            conexaoDb1.CloseConnect();
+
+            
+            return colaborador.IdUser;
         }
 
     }

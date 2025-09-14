@@ -211,7 +211,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="serverhttp\loginhttp\LoginRequest.cs" />
-    <Compile Include="server\ServeLogin.cs" />
+    <Compile Include="server\ServiceLogin.cs" />
     <Compile Include="view\Sangria.cs">
       <SubType>Form</SubType>
     </Compile>

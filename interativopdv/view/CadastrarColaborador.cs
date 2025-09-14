@@ -14,6 +14,7 @@ namespace interativopdv.view
 {
     public partial class CadastrarColaborador : Form
     {
+        ServiceColaborador serviceColaborador = new ServiceColaborador();
         public CadastrarColaborador()
         {
             InitializeComponent();
@@ -43,34 +44,32 @@ namespace interativopdv.view
 
         private void btnSalvarColaborador_Click(object sender, EventArgs e)
         {
-            string nameColaborador = txtName.Text;
-            string sobreNamecolaborado = txtSobrenomeColab.Text;
-            string cpf = maskCpfEmployee.Text;
 
-            string dataNasc = maskDataNasc.Text;
-            string email = txtEmailColab.Text;
-            string funcoa = cBoxSelectFuncao.Text;
+            ColaboradorModel colaborador = new ColaboradorModel();
 
-            bool ativo = checkBox1.Checked;
+            colaborador.Name = txtName.Text.Trim();
+            colaborador.SobreName = txtSobrenomeColab.Text.Trim();
+            colaborador.Cpf = maskCpfEmployee.Text.Trim().Replace(",","").Replace("-","").Replace(".","");
+            colaborador.DataNascimento = maskDataNasc.Text.Trim();
+
+            colaborador.DataNascimento = maskDataNasc.Text.Trim();
+            colaborador.Email = txtEmailColab.Text.Trim();
+            colaborador.Funcao = cBoxSelectFuncao.Text.Trim();
+
+           colaborador.Status = checkBox1.Checked;
 
             // endereco
-            string endLogradouro = txtLogradouroColab.Text;
-            string endNumber = txtEndNumbe.Text;
-            string endCep = txtCepColab.Text;
-            string endBairro = txtBairroColab.Text;
-            string endCidade = txtCidadeColab.Text;
-            string endEstado = txtEstadoColab.Text;
-            string endComplemento = txtComplColab.Text;
+            colaborador.Endereco.Logradouro = txtLogradouroColab.Text.Trim();
+            colaborador.Endereco.Numero = txtEndNumbe.Text.Trim();
+            colaborador.Endereco.Cep = maskCpfEmployee.Text.Trim().Replace(",","").Replace(".","").Replace("-","");
+            colaborador.Endereco.Bairro= txtBairroColab.Text.Trim();
+            colaborador.Endereco.Cidade = txtCidadeColab.Text.Trim();
+            colaborador.Endereco.Uf = txtEstadoColab.Text.Trim();
+            colaborador.Endereco.Complemento = txtComplColab.Text.Trim();
 
-            EnderecoModel endereco = new EnderecoModel();
-            endereco.Logradouro = endLogradouro;
-            endereco.Cep = endCep;
-            endereco.Numero = endNumber;
-            endereco.Bairro = endBairro;
-            endereco.Cidade = endCidade;
-            endereco.Uf = endEstado;
-            endereco.Complemento = endComplemento;
 
+            serviceColaborador.insertUser(colaborador);
+            this.Close();
         }
 
         private void cBoxSelectFuncao_SelectedIndexChanged(object sender, EventArgs e)

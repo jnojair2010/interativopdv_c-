@@ -23,7 +23,7 @@ namespace interativopdv
         }
 
         int countErroLogin = 0;
-        private ServeLogin LgServer = new ServeLogin();
+        private ServiceLogin LgServer = new ServiceLogin();
 
         private void label1_Click(object sender, EventArgs e)
         {

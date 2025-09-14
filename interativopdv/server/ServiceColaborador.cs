@@ -1,9 +1,11 @@
 ﻿using interativopdv.dao;
 using interativopdv.model;
 using MySql.Data.MySqlClient;
+using Mysqlx;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -224,6 +226,202 @@ namespace interativopdv.server
             }
 
             conexaoDb1.CloseConnect();
+
+        }
+
+        public void insertUser(ColaboradorModel model)
+        {
+            ColaboradorModel colaboradorModel = new ColaboradorModel();
+            bool conn = conexaoDb1.OpenConexao();
+            model.IdUser = verificarUserColaborador(model);
+            model.Id = verificarColaborador(model);
+
+            if ( model.IdUser== 0){
+                try
+                {
+                    var command = new MySqlCommand("insert into user (firstName, lastName,email, cpf, dataNasc) values (@firstName, @lastName, @email, @cpf, STR_TO_DATE(@dataNasc,'%d/%m/%Y'))", conexaoDb1.GetConnection());
+                    command.Parameters.AddWithValue("@firstName", model.Name);
+                    command.Parameters.AddWithValue("@lastName", model.SobreName);
+                    command.Parameters.AddWithValue("@email", model.Email);
+                    command.Parameters.AddWithValue("@cpf", model.Cpf);
+                    command.Parameters.AddWithValue("@dataNasc", model.DataNascimento);
+                    command.ExecuteNonQuery();
+
+                    
+
+                    colaboradorModel.IdUser = verificarUserColaborador(model);
+                    model.IdUser = colaboradorModel.IdUser;
+
+                    insertEmployee(model);
+                    model.Id = verificarColaborador(model);
+                    insertPermissionInRegistryEmployee(model);
+                    insertAddress(model);
+                    
+
+                }
+                catch(Exception e) {
+                    Console.WriteLine($" Erro sql  insert user {e.Message}");
+                }
+            }
+
+
+        }
+
+        private void insertEmployee(ColaboradorModel model)
+        {
+            ColaboradorModel colaboradorModel = new ColaboradorModel();
+            bool conn = conexaoDb1.OpenConexao();
+
+            try
+            {
+                var command = new MySqlCommand("insert into employee (assignment, isActive, idUser) values (@assignment, @isActive, @idUser) ", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@assignment", model.Funcao);
+                command.Parameters.AddWithValue("@isActive", model.Status);
+                command.Parameters.AddWithValue("@idUser", model.IdUser);
+                command.ExecuteNonQuery();
+
+                MessageBox.Show(" Colaborador Inserido com sucesso!");
+            }
+            catch(Exception e) {
+
+                Console.WriteLine(" Erro  insert employee"+e.Message);
+            }
+            conexaoDb1.CloseConnect();
+        }
+        private void insertAddress(ColaboradorModel model)
+        {
+            bool conn = conexaoDb1.OpenConexao();
+
+            try
+            {
+
+                var command = new MySqlCommand("insert into address (logradouro,number, bairro, cidade,uf,complemento,idUser, cep)" +
+                    " values (@logradouro,@number, @bairro, @cidade, @uf, @complemento, @idUser, @cep) ", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@logradouro", model.Endereco.Logradouro);
+                command.Parameters.AddWithValue("@number", model.Endereco.Numero);
+                command.Parameters.AddWithValue("@bairro", model.Endereco.Bairro);
+                command.Parameters.AddWithValue("@cidade", model.Endereco.Cidade);
+                command.Parameters.AddWithValue("@uf", model.Endereco.Uf);
+                command.Parameters.AddWithValue("@complemento", model.Endereco.Complemento);
+                command.Parameters.AddWithValue("@idUser", model.IdUser);
+                command.Parameters.AddWithValue("@cep", model.Endereco.Cep);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(" Erro  insert employee" + e.Message);
+            }
+
+            conexaoDb1.CloseConnect();
+        }
+        private void insertPermissionInRegistryEmployee(ColaboradorModel model)
+        {
+            bool conn = conexaoDb1.OpenConexao();
+
+            try
+            {
+                var command = new MySqlCommand("insert into permission (enterComPrice, inputPricePurchase, menuEmpresa, menuColaborador, menuFornecedor, menuProducto, menuCaixa, employeeId)" +
+                    " values (@enterComPrice, @inputPricePurchase, @menuEmpresa, @menuColaborador, @menuFornecedor, @menuProducto, @menuCaixa, @employeeId) ", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@enterComPrice", false);
+                command.Parameters.AddWithValue("@inputPricePurchase", false);
+                command.Parameters.AddWithValue("@menuEmpresa",false);
+                command.Parameters.AddWithValue("@menuColaborador", false);
+                command.Parameters.AddWithValue("@menuFornecedor", false);
+                command.Parameters.AddWithValue("@menuProducto", false);
+                command.Parameters.AddWithValue("@menuCaixa", false);
+                command.Parameters.AddWithValue("@employeeId", model.Id);
+
+                command.ExecuteNonQuery();
+
+            }
+            catch(Exception e) {
+                Console.WriteLine(e.Message); 
+            }
+            conexaoDb1.CloseConnect();
+        }
+
+
+        // retornar o id do usuario se existir usuario
+        private int verificarUserColaborador(ColaboradorModel model)
+        {
+            ColaboradorModel colaboradorModel = new ColaboradorModel();
+            bool conn = conexaoDb1.OpenConexao();
+           
+                try
+                {
+                    var command = new MySqlCommand("select * from user where cpf=@cpf ", conexaoDb1.GetConnection());
+                    command.Parameters.AddWithValue("@cpf", model.Cpf);
+
+                    var reader = command.ExecuteReader();
+
+                    if (reader.Read() == true)
+                    {
+
+                        colaboradorModel.IdUser = reader.GetInt32("idUser");
+                        Console.WriteLine($" o reader no verificar user colaborador {reader.Read()} e seu idUser é {colaboradorModel.IdUser} e id employee é {colaboradorModel.Id}");
+
+                         conexaoDb1.CloseConnect();
+                         return colaboradorModel.IdUser;
+                    }
+                    else
+                    {
+                        Console.WriteLine($" reader {reader.Read()}");
+
+                        conexaoDb1.CloseConnect();
+                        return 0;
+                    }
+                
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($" Erro sql {e.Message}");
+
+                    conexaoDb1.CloseConnect();
+                    return 0;
+                }
+
+            
+
+        }
+
+        //verifica o id do colaborador / employee se existir 
+        private int verificarColaborador(ColaboradorModel model)
+        {
+            ColaboradorModel colaboradorModel = new ColaboradorModel();
+            bool conn = conexaoDb1.OpenConexao();
+
+            try
+            {
+                var command = new MySqlCommand("select * from employee where idUser=@idUser ", conexaoDb1.GetConnection());
+                command.Parameters.AddWithValue("@idUser",model.IdUser);
+
+                var reader = command.ExecuteReader();
+
+                if (reader.Read() == true)
+                {
+
+                    colaboradorModel.Id = reader.GetInt32("idEmployee");
+
+                    Console.WriteLine($" o reader no verificar user colaborador {reader.Read()} e seu idUser é {colaboradorModel.IdUser} e id employee é {colaboradorModel.Id}");
+
+                    conexaoDb1.CloseConnect();
+                    return colaboradorModel.Id;
+                }
+                else
+                {
+                    Console.WriteLine($" reader {reader.Read()}");
+                    conexaoDb1.CloseConnect();
+                    return 0;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($" erro sql verificação ");
+                conexaoDb1.CloseConnect();
+                return 0;
+            }
+          
+
 
         }
     }
