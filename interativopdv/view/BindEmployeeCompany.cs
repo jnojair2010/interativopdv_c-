@@ -87,7 +87,14 @@ namespace interativopdv.view
 
             colaborador = service.getColaborador(cpf);
 
-            MessageBox.Show($"Colaborador:   {colaborador.Name.ToUpper()} {colaborador.SobreName.ToUpper()}");
+            if(colaborador.Id == 0)
+            {
+                MessageBox.Show("Cpf Invalido");
+            }
+            else
+            {
+                MessageBox.Show($"Colaborador:   {colaborador.Name.ToUpper()} {colaborador.SobreName.ToUpper()}");
+            }
 
         }
 
