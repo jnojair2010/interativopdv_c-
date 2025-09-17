@@ -38,12 +38,12 @@ namespace interativopdv.server
             usuarioSystema.Endereco = endereco;
         }
 
-        public void PermissionSystem(PermissoesUserSystem p)
+        public void PermissionSystem(PermissionUserSystem p)
         {
             usuarioSystema.PermissoesColaborador = p;
         }
 
-        public PermissoesUserSystem GetPermissionSystem
+        public PermissionUserSystem GetPermissionSystem
         {
             get { return usuarioSystema.PermissoesColaborador; }
         }

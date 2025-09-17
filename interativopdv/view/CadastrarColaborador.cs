@@ -58,6 +58,28 @@ namespace interativopdv.view
 
            colaborador.Status = checkBox1.Checked;
 
+            switch (colaborador.Funcao)
+            {
+                case "Administrador":
+                    colaborador.Permission.setAdministrador();
+                    break;
+                case "Atendente":
+                    colaborador.Permission.setAtendente();
+                    break;
+                case "Caixa":
+                    colaborador.Permission.setCaixa();
+                    break;
+                case "Gerente":
+                    colaborador.Permission.setGerente();
+                    break;
+                case "Desenvolvedor":
+                    colaborador.Permission.setDesenvolvedor();
+                    break;
+                default:
+                    break;
+
+            }
+
             // endereco
             colaborador.Endereco.Logradouro = txtLogradouroColab.Text.Trim();
             colaborador.Endereco.Numero = txtEndNumbe.Text.Trim();
@@ -67,6 +89,7 @@ namespace interativopdv.view
             colaborador.Endereco.Uf = txtEstadoColab.Text.Trim();
             colaborador.Endereco.Complemento = txtComplColab.Text.Trim();
 
+            MessageBox.Show($" a função do colaborador cadastrado é {colaborador.Funcao}");
 
             serviceColaborador.insertUser(colaborador);
             this.Close();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace interativopdv.model
 {
-    internal class PermissoesUserSystem
+    internal class PermissionUserSystem
     {   
         // inserir preço de compra
         private bool enterComPrice = false;
@@ -73,7 +73,12 @@ namespace interativopdv.model
             MenuProdutos = true;
             MenuCaixa = true;
         }
-        public void serManager()
+        public void setCaixa()
+        {
+            MenuProdutos = true;
+            MenuCaixa = true;
+        }
+        public void setGerente()
         {
 
             MenuEmpresa = false;
@@ -84,7 +89,7 @@ namespace interativopdv.model
             MenuProdutos = true;
             MenuCaixa = true;
         }
-        public void setDev()
+        public void setDesenvolvedor()
         {
             MenuEmpresa = true;
             EnterComPrice = true;

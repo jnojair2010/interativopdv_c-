@@ -137,7 +137,7 @@
     <Compile Include="view\CadastrarEmpresa.Designer.cs">
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="model\PermissoesUserSystem.cs" />
+    <Compile Include="model\PermissionUserSystem.cs" />
     <Compile Include="view\CadastrarLogin.cs">
       <SubType>Form</SubType>
     </Compile>

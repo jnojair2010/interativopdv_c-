@@ -47,7 +47,7 @@ namespace interativopdv.view
             bool menuProducto = cBMenuProducto.Checked;
             bool menuBox = cBMenuCaixa.Checked;
 
-            PermissoesUserSystem permission = new PermissoesUserSystem();
+            PermissionUserSystem permission = new PermissionUserSystem();
 
             permission.EnterComPrice = registryPricePurchse;
             permission.InputPricePurchase = viewPricePurchase;

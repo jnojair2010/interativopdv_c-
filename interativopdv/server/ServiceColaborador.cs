@@ -77,7 +77,7 @@ namespace interativopdv.server
                     var reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        PermissoesUserSystem permission = new PermissoesUserSystem();
+                        PermissionUserSystem permission = new PermissionUserSystem();
                         permission.EnterComPrice = reader.GetBoolean("enterComPrice");
                         permission.InputPricePurchase = reader.GetBoolean("inputPricePurchase");
                         permission.MenuEmpresa = reader.GetBoolean("menuEmpresa");
@@ -322,13 +322,13 @@ namespace interativopdv.server
             {
                 var command = new MySqlCommand("insert into permission (enterComPrice, inputPricePurchase, menuEmpresa, menuColaborador, menuFornecedor, menuProducto, menuCaixa, employeeId)" +
                     " values (@enterComPrice, @inputPricePurchase, @menuEmpresa, @menuColaborador, @menuFornecedor, @menuProducto, @menuCaixa, @employeeId) ", conexaoDb1.GetConnection());
-                command.Parameters.AddWithValue("@enterComPrice", false);
-                command.Parameters.AddWithValue("@inputPricePurchase", false);
-                command.Parameters.AddWithValue("@menuEmpresa",false);
-                command.Parameters.AddWithValue("@menuColaborador", false);
-                command.Parameters.AddWithValue("@menuFornecedor", false);
-                command.Parameters.AddWithValue("@menuProducto", false);
-                command.Parameters.AddWithValue("@menuCaixa", false);
+                command.Parameters.AddWithValue("@enterComPrice", model.Permission.EnterComPrice);
+                command.Parameters.AddWithValue("@inputPricePurchase", model.Permission.InputPricePurchase);
+                command.Parameters.AddWithValue("@menuEmpresa", model.Permission.MenuEmpresa);
+                command.Parameters.AddWithValue("@menuColaborador", model.Permission.MenuColaborador);
+                command.Parameters.AddWithValue("@menuFornecedor", model.Permission.MenuFornecedor);
+                command.Parameters.AddWithValue("@menuProducto", model.Permission.MenuProdutos);
+                command.Parameters.AddWithValue("@menuCaixa", model.Permission.MenuCaixa);
                 command.Parameters.AddWithValue("@employeeId", model.Id);
 
                 command.ExecuteNonQuery();
@@ -420,9 +420,8 @@ namespace interativopdv.server
                 conexaoDb1.CloseConnect();
                 return 0;
             }
-          
-
-
         }
+
+
     }
 }
