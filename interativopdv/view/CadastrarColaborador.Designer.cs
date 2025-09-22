@@ -53,7 +53,6 @@
             this.txtCidadeColab = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtCepColab = new System.Windows.Forms.TextBox();
             this.txtEndNumbe = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -226,7 +225,6 @@
             this.groupBox2.Controls.Add(this.txtCidadeColab);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.txtCepColab);
             this.groupBox2.Controls.Add(this.txtEndNumbe);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -242,7 +240,7 @@
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(240, 101);
+            this.maskedTextBox3.Location = new System.Drawing.Point(255, 101);
             this.maskedTextBox3.Mask = "00.000-000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(214, 22);
@@ -251,7 +249,7 @@
             // txtComplColab
             // 
             this.txtComplColab.AcceptsReturn = true;
-            this.txtComplColab.Location = new System.Drawing.Point(240, 211);
+            this.txtComplColab.Location = new System.Drawing.Point(255, 212);
             this.txtComplColab.Name = "txtComplColab";
             this.txtComplColab.Size = new System.Drawing.Size(214, 22);
             this.txtComplColab.TabIndex = 13;
@@ -259,7 +257,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(237, 191);
+            this.label10.Location = new System.Drawing.Point(252, 193);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(94, 16);
             this.label10.TabIndex = 12;
@@ -267,7 +265,7 @@
             // 
             // txtEstadoColab
             // 
-            this.txtEstadoColab.Location = new System.Drawing.Point(47, 212);
+            this.txtEstadoColab.Location = new System.Drawing.Point(33, 212);
             this.txtEstadoColab.Name = "txtEstadoColab";
             this.txtEstadoColab.Size = new System.Drawing.Size(187, 22);
             this.txtEstadoColab.TabIndex = 11;
@@ -275,7 +273,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(44, 191);
+            this.label9.Location = new System.Drawing.Point(30, 193);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 16);
             this.label9.TabIndex = 10;
@@ -283,14 +281,14 @@
             // 
             // txtBairroColab
             // 
-            this.txtBairroColab.Location = new System.Drawing.Point(44, 156);
+            this.txtBairroColab.Location = new System.Drawing.Point(33, 158);
             this.txtBairroColab.Name = "txtBairroColab";
             this.txtBairroColab.Size = new System.Drawing.Size(190, 22);
             this.txtBairroColab.TabIndex = 9;
             // 
             // txtCidadeColab
             // 
-            this.txtCidadeColab.Location = new System.Drawing.Point(240, 156);
+            this.txtCidadeColab.Location = new System.Drawing.Point(257, 158);
             this.txtCidadeColab.Name = "txtCidadeColab";
             this.txtCidadeColab.Size = new System.Drawing.Size(214, 22);
             this.txtCidadeColab.TabIndex = 8;
@@ -298,7 +296,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(236, 139);
+            this.label8.Location = new System.Drawing.Point(253, 139);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 16);
             this.label8.TabIndex = 7;
@@ -307,22 +305,15 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(42, 139);
+            this.label7.Location = new System.Drawing.Point(31, 139);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 16);
             this.label7.TabIndex = 6;
             this.label7.Text = "Bairro:";
             // 
-            // txtCepColab
-            // 
-            this.txtCepColab.Location = new System.Drawing.Point(240, 101);
-            this.txtCepColab.Name = "txtCepColab";
-            this.txtCepColab.Size = new System.Drawing.Size(214, 22);
-            this.txtCepColab.TabIndex = 5;
-            // 
             // txtEndNumbe
             // 
-            this.txtEndNumbe.Location = new System.Drawing.Point(44, 101);
+            this.txtEndNumbe.Location = new System.Drawing.Point(33, 103);
             this.txtEndNumbe.Name = "txtEndNumbe";
             this.txtEndNumbe.Size = new System.Drawing.Size(190, 22);
             this.txtEndNumbe.TabIndex = 4;
@@ -330,7 +321,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(237, 84);
+            this.label6.Location = new System.Drawing.Point(252, 84);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 16);
             this.label6.TabIndex = 3;
@@ -339,7 +330,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 84);
+            this.label5.Location = new System.Drawing.Point(30, 84);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 16);
             this.label5.TabIndex = 2;
@@ -347,15 +338,15 @@
             // 
             // txtLogradouroColab
             // 
-            this.txtLogradouroColab.Location = new System.Drawing.Point(44, 51);
+            this.txtLogradouroColab.Location = new System.Drawing.Point(33, 51);
             this.txtLogradouroColab.Name = "txtLogradouroColab";
-            this.txtLogradouroColab.Size = new System.Drawing.Size(410, 22);
+            this.txtLogradouroColab.Size = new System.Drawing.Size(438, 22);
             this.txtLogradouroColab.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 34);
+            this.label4.Location = new System.Drawing.Point(30, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 16);
             this.label4.TabIndex = 0;
@@ -421,7 +412,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCepColab;
         private System.Windows.Forms.TextBox txtEndNumbe;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtBairroColab;

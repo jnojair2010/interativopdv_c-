@@ -233,7 +233,7 @@ namespace interativopdv.server
         {
             ColaboradorModel colaboradorModel = new ColaboradorModel();
             bool conn = conexaoDb1.OpenConexao();
-            model.IdUser = verificarUserColaborador(model);
+            model.IdUser = verificarUser(model);
             model.Id = verificarColaborador(model);
 
             if ( model.IdUser== 0){
@@ -249,7 +249,7 @@ namespace interativopdv.server
 
                     
 
-                    colaboradorModel.IdUser = verificarUserColaborador(model);
+                    colaboradorModel.IdUser = verificarUser(model);
                     model.IdUser = colaboradorModel.IdUser;
 
                     insertEmployee(model);
@@ -342,7 +342,7 @@ namespace interativopdv.server
 
 
         // retornar o id do usuario se existir usuario
-        private int verificarUserColaborador(ColaboradorModel model)
+        private int verificarUser(ColaboradorModel model)
         {
             ColaboradorModel colaboradorModel = new ColaboradorModel();
             bool conn = conexaoDb1.OpenConexao();
