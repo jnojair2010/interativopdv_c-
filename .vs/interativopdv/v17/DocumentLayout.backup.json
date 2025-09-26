@@ -1,34 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jair\\source\\repos\\interativopdv\\",
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\jair\\source\\repos\\interativopdv\\interativopdv\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\server\\servicecompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\server\\servicecompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\cadastrarlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\cadastrarempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\servicelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\server\\servicelogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\cadastrarempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\cadastrarcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\servicecolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\server\\servicecolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\cadastrarcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\cadastrarcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\view\\cadastrarcolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\server\\servicecolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\server\\servicecolaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50618C27-B57D-4579-BD33-20E8838EDEC3}|interativopdv\\interativopdv.csproj|solutionrelative:interativopdv\\model\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,86 +46,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CadastrarColaborador.cs",
-              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs",
-              "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarColaborador.cs",
-              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs",
-              "RelativeToolTip": "interativopdv\\view\\CadastrarColaborador.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAcwF0AAAApAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ServiceCompany.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceCompany.cs",
+              "RelativeDocumentMoniker": "interativopdv\\server\\ServiceCompany.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceCompany.cs",
+              "RelativeToolTip": "interativopdv\\server\\ServiceCompany.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwE4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T13:45:20.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CadastrarColaborador.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs",
-              "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarColaborador.cs",
-              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs [Design]",
-              "RelativeToolTip": "interativopdv\\view\\CadastrarColaborador.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T13:45:18.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceColaborador.cs",
-              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceColaborador.cs",
-              "RelativeDocumentMoniker": "interativopdv\\server\\ServiceColaborador.cs",
-              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceColaborador.cs",
-              "RelativeToolTip": "interativopdv\\server\\ServiceColaborador.cs",
-              "ViewState": "AgIAADMBAAAAAAAAAAAiwE4BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T17:12:32.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
-              "RelativeDocumentMoniker": "interativopdv\\model\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
-              "RelativeToolTip": "interativopdv\\model\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T17:01:50.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceLogin.cs",
-              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceLogin.cs",
-              "RelativeDocumentMoniker": "interativopdv\\server\\ServiceLogin.cs",
-              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceLogin.cs",
-              "RelativeToolTip": "interativopdv\\server\\ServiceLogin.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAIwEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T16:58:55.971Z"
+              "WhenOpened": "2025-09-22T14:25:52.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CadastrarLogin.cs",
-              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarLogin.cs",
-              "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarLogin.cs",
-              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarLogin.cs",
-              "RelativeToolTip": "interativopdv\\view\\CadastrarLogin.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwCEAAAAAAAAAAAAAAA==",
+              "Title": "CadastrarEmpresa.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarEmpresa.cs",
+              "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarEmpresa.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarEmpresa.cs",
+              "RelativeToolTip": "interativopdv\\view\\CadastrarEmpresa.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAA4wEQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T16:56:26.632Z"
+              "WhenOpened": "2025-09-22T13:16:29.24Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Principal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\Principal.cs",
-              "RelativeDocumentMoniker": "interativopdv\\Principal.cs",
-              "ToolTip": "C:\\Users\\jair\\source\\repos\\interativopdv\\interativopdv\\Principal.cs [Design]",
-              "RelativeToolTip": "interativopdv\\Principal.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "CadastrarEmpresa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarEmpresa.cs",
+              "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarEmpresa.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarEmpresa.cs [Design]",
+              "RelativeToolTip": "interativopdv\\view\\CadastrarEmpresa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T14:06:12.433Z",
+              "WhenOpened": "2025-09-22T13:16:25.145Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CadastrarColaborador.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs",
+              "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarColaborador.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs",
+              "RelativeToolTip": "interativopdv\\view\\CadastrarColaborador.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAiwF0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T13:45:20.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadastrarColaborador.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs",
+              "RelativeDocumentMoniker": "interativopdv\\view\\CadastrarColaborador.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\view\\CadastrarColaborador.cs [Design]",
+              "RelativeToolTip": "interativopdv\\view\\CadastrarColaborador.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T13:45:18.845Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceColaborador.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceColaborador.cs",
+              "RelativeDocumentMoniker": "interativopdv\\server\\ServiceColaborador.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\server\\ServiceColaborador.cs",
+              "RelativeToolTip": "interativopdv\\server\\ServiceColaborador.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAAswDwBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T17:12:32.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
+              "RelativeDocumentMoniker": "interativopdv\\model\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\interativopdv\\interativopdv\\model\\LoginModel.cs",
+              "RelativeToolTip": "interativopdv\\model\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T17:01:50.45Z"
             }
           ]
         }

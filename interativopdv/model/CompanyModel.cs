@@ -15,6 +15,7 @@ namespace interativopdv.model
         private int idOwner;
 
         private   EnderecoModel endereco = new EnderecoModel();
+        private OwnerModel owner = new OwnerModel();
 
         public int IdComapany
         {
@@ -44,6 +45,11 @@ namespace interativopdv.model
         public EnderecoModel Endereco
         {   get { return endereco; }
             set {  endereco = value; }
+        }
+        public OwnerModel Owner
+        {
+            get { return owner; }
+            set { owner = value; }
         }
     }
 }

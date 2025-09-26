@@ -52,6 +52,7 @@ namespace interativopdv.model
             companyModel.Cnpj= maskCnpj.Text.Trim().Replace("/", "").Replace("-", "");
             companyModel.NameFantasia = txtNameFantasy.Text.Trim();
             companyModel.NameCompany = txtNameEnterprice.Text.Trim();
+            companyModel.Owner.Cpf = maskCpfOwner.Text.Trim().Replace(",", "").Replace("-", "");
 
             endereco.Logradouro = txtLogradouro.Text.Trim();
             endereco.Numero = txtNumber.Text.Trim();
@@ -64,6 +65,8 @@ namespace interativopdv.model
             companyModel.Endereco = endereco;
 
             serviceCompany.insertCompany(companyModel);
+
+           // this.Close();
 
         }
 
